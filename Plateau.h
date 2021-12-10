@@ -2,7 +2,11 @@
 #include <memory>
 #include <vector>
 #include <iostream>
-#include "Salle.h"
+//#include "Salle.h"
+
+inline extern const std::string nomsDirections[4] = { "au nord","au sud","à l'est","à l'ouest" };
+inline extern const std::string symbolesDirections[4] = { "N","S","E","O" };
+inline extern const int directionsInverses[4] = { 1,0,3,2 };
 
 class Plateau {
 public:

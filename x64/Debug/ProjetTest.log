@@ -1,6 +1,119 @@
-﻿  Plateau.cpp
-  Salle.cpp
+﻿  Joueur.cpp
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(8,9): error C2061: erreur de syntaxe : identificateur 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(10,24): error C2061: erreur de syntaxe : identificateur 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(11,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(11,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(11,28): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(17,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(17,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(17,23): error C2238: jetons inattendus avant ';'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(8,25): error C2065: 'salleActuelle_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(8,42): error C2065: 'salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(10,40): error C2065: 'salleActuelle_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.h(10,57): error C2065: 'salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(4,7): error C2039: 'cout' n'est pas membre de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\predefined C++ types (compiler internal)(341): message : voir la déclaration de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(4,12): error C2065: 'cout' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(4,34): error C2065: 'salleActuelle_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(5,7): error C2039: 'cout' n'est pas membre de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\predefined C++ types (compiler internal)(341): message : voir la déclaration de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(5,12): error C2065: 'cout' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(5,20): error C2039: 'endl' n'est pas membre de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\predefined C++ types (compiler internal)(341): message : voir la déclaration de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(5,25): error C2065: 'endl' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(5,28): error C2065: 'salleActuelle_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(6,2): error C2065: 'Salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(6,10): error C2065: 'voisins' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(6,20): error C2065: 'salleActuelle_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(8,7): error C2065: 'voisins' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(9,9): error C2039: 'cout' n'est pas membre de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\predefined C++ types (compiler internal)(341): message : voir la déclaration de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(9,14): error C2065: 'cout' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(9,32): error C2065: 'voisins' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(9,63): error C2065: 'nomsDirections' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(9,92): error C2065: 'symbolesDirections' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(15,6): error C2065: 'salleActuelle_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(16,8): error C2039: 'cout' n'est pas membre de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\predefined C++ types (compiler internal)(341): message : voir la déclaration de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(16,13): error C2065: 'cout' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(16,45): error C2065: 'nomsDirections' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(19,8): error C2039: 'cout' n'est pas membre de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\predefined C++ types (compiler internal)(341): message : voir la déclaration de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(19,13): error C2065: 'cout' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(19,39): error C2065: 'nomsDirections' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(20,3): error C2065: 'salleActuelle_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(20,20): error C2065: 'salleActuelle_' : identificateur non déclaré
   main.cpp
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14,36): error C2065: 'Salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14,25): error C2923: 'std::unique_ptr' : 'Salle' n'est pas un argument de type modèle valide pour le paramètre '_Ty'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14): message : voir la déclaration de 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14,25): error C2976: 'std::unique_ptr' : nombre d'arguments modèle insuffisant
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\memory(3155): message : voir la déclaration de 'std::unique_ptr'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14,43): error C2955: 'std::unique_ptr' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\memory(3155): message : voir la déclaration de 'std::unique_ptr'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(15,24): error C2061: erreur de syntaxe : identificateur 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(16,24): error C2061: erreur de syntaxe : identificateur 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(17,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(17,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(17,28): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19,30): error C2065: 'Salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19,19): error C2923: 'std::unique_ptr' : 'Salle' n'est pas un argument de type modèle valide pour le paramètre '_Ty'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19): message : voir la déclaration de 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19,19): error C2976: 'std::unique_ptr' : nombre d'arguments modèle insuffisant
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\memory(3155): message : voir la déclaration de 'std::unique_ptr'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19,19): error C3203: 'unique_ptr' : la classe modèle non spécialisée ne peut pas être utilisée comme argument modèle pour le paramètre modèle '_Ty' ; type réel attendu
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(20,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(20,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(20,23): error C2238: jetons inattendus avant ';'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(16,40): error C2065: 'salleDeDepart_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(16,57): error C2065: 'salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(71,49): error C2660: 'Plateau::connecterVoisins' : la fonction ne prend pas 3 arguments
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(15,7): message : voir la déclaration de 'Plateau::connecterVoisins'
+  Plateau.cpp
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14,36): error C2065: 'Salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14,25): error C2923: 'std::unique_ptr' : 'Salle' n'est pas un argument de type modèle valide pour le paramètre '_Ty'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14): message : voir la déclaration de 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14,25): error C2976: 'std::unique_ptr' : nombre d'arguments modèle insuffisant
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\memory(3155): message : voir la déclaration de 'std::unique_ptr'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(14,43): error C2955: 'std::unique_ptr' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\memory(3155): message : voir la déclaration de 'std::unique_ptr'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(15,24): error C2061: erreur de syntaxe : identificateur 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(16,24): error C2061: erreur de syntaxe : identificateur 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(17,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(17,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(17,28): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19,30): error C2065: 'Salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19,19): error C2923: 'std::unique_ptr' : 'Salle' n'est pas un argument de type modèle valide pour le paramètre '_Ty'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19): message : voir la déclaration de 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19,19): error C2976: 'std::unique_ptr' : nombre d'arguments modèle insuffisant
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\memory(3155): message : voir la déclaration de 'std::unique_ptr'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(19,19): error C3203: 'unique_ptr' : la classe modèle non spécialisée ne peut pas être utilisée comme argument modèle pour le paramètre modèle '_Ty' ; type réel attendu
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(20,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(20,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(20,23): error C2238: jetons inattendus avant ';'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(16,40): error C2065: 'salleDeDepart_' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.h(16,57): error C2065: 'salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(3,44): error C2065: 'Salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(3,33): error C2923: 'std::unique_ptr' : 'Salle' n'est pas un argument de type modèle valide pour le paramètre '_Ty'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(3): message : voir la déclaration de 'Salle'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(3,33): error C2976: 'std::unique_ptr' : nombre d'arguments modèle insuffisant
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\memory(3155): message : voir la déclaration de 'std::unique_ptr'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(3,51): error C2955: 'std::unique_ptr' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\memory(3155): message : voir la déclaration de 'std::unique_ptr'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(4,20): error C2672: 'move' : fonction correspondante surchargée introuvable
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(4,30): error C2893: La spécialisation du modèle de fonction 'remove_reference<_Ty>::type &&std::move(_Ty &&) noexcept' a échoué
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\type_traits(1455): message : voir la déclaration de 'std::move'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(4,30): message : Avec les arguments template suivants :
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(4,30): message : '_Ty=std::unique_ptr &'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(8,37): error C2761: 'void Plateau::connecterVoisins(void)' : la redéclaration du membre n'est pas autorisée
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(8,32): error C2065: 'Salle' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(8,39): error C2065: 'salle1' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(8,47): error C2062: type 'int' inattendu
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(8,76): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Plateau.cpp(8,76): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+  Salle.cpp
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Salle.cpp(5,27): error C2065: 'nomsDirections' : identificateur non déclaré
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Salle.cpp(6,7): error C2039: 'cout' n'est pas membre de 'std'
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\string(24): message : voir la déclaration de 'std'
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Salle.cpp(6,12): error C2065: 'cout' : identificateur non déclaré
   Génération de code en cours...
-     Création de la bibliothèque C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.lib et de l'objet C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exp
-  ProjetTest.vcxproj -> C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exe

@@ -1,10 +1,6 @@
 #pragma once
-#include <memory>
-#include <vector>
-#include <iostream>
-
-inline extern const std::string nomsDirections[4] = { "nord","sud","est","ouest" };
-inline extern const int directionsInverses[4] = { 1,0,3,2 };
+#include <string>
+//#include "Plateau.h"
 
 class Salle {
 public:

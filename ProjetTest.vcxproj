@@ -161,6 +161,7 @@
   <ItemGroup>
     <ClCompile Include="bibliotheque_cours\bibliotheque_cours.cpp" />
     <ClCompile Include="bibliotheque_cours\verification_allocation.cpp" />
+    <ClCompile Include="Joueur.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Plateau.cpp" />
     <ClCompile Include="Salle.cpp" />
@@ -173,6 +174,7 @@
     <None Include="..\doc\Vcpkg.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Joueur.h" />
     <ClInclude Include="Plateau.h" />
     <ClInclude Include="Salle.h" />
   </ItemGroup>

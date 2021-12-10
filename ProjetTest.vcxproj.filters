@@ -32,6 +32,9 @@
     <ClCompile Include="Plateau.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Joueur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
@@ -49,6 +52,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Plateau.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Joueur.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

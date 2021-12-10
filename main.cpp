@@ -17,6 +17,7 @@
 #include <memory>
 #include "Plateau.h"
 #include "Salle.h"
+#include "Joueur.h"
 
 //#if __has_include("gtest/gtest.h")
 //#include "gtest/gtest.h"
@@ -63,24 +64,29 @@ int main(int argc, char* argv[])
 	Salle cuisine("Cuisine",
 		"C'est sale, il y a plein de bouffe partout, une tonne de mouches à fruits et une odeur d'oeufs pourris.");
 
-	Salle entree("Entree", "cette salle est l'entree", "tapis rouge sur le sol");
+	Salle entree("Entree", "cette salle est l'entree, tapis rouge sur le sol");
+	Salle corridor("Corridor",
+	"Les murs sont tachés de sang, le vieux plancher de bois craque à chacun de tes pas, il fait sombre, les ampoules sont brûlées.");
+
+	plateau.connecterVoisins(&corridor, 0, &cuisine);
+}
 	bool look = false;
 	string commande;
-	while (true);
-	{
-		Salle salleActuel = entree;
-		cout << "Vous etes dans " << salleActuel.getNom() << endl;
-		cout << salleActuel.voisin[0].getNom() << "est au nord" << endl;
-		cout << salleActuel.voisin[1].getNom() << "est a l'est" << endl;
-		cout << "<";
-		cin >> commande;
-		if (commande.size() == 1) {
-			switch (commande[0]) {
-			case 'N': salleActuel = entree.voisin[0]; break;
-			case 'E': salleActuel = entree.voisin[1];
-			}
-		}
-	}
+	//while (true);
+	//{
+	//	Salle salleActuel = entree;
+	//	cout << "Vous etes dans " << salleActuel.getNom() << endl;
+	//	cout << salleActuel.voisin[0].getNom() << "est au nord" << endl;
+	//	cout << salleActuel.voisin[1].getNom() << "est a l'est" << endl;
+	//	cout << "<";
+	//	cin >> commande;
+	//	if (commande.size() == 1) {
+	//		switch (commande[0]) {
+	//		case 'N': salleActuel = entree.voisin[0]; break;
+	//		case 'E': salleActuel = entree.voisin[1];
+	//		}
+	//	}
+	//}
 	/*
 		//? Tout a été mis dans le main, aucun orienté-objet.
 		cout << "Ceci est mon super jeu mal programmé.\n\n";
@@ -110,11 +116,6 @@ int main(int argc, char* argv[])
 			else if (commande == "look") look = true;
 			else cout << "Je ne sais pas ça\n";
 			break;
-	Salle corridor("Corridor",
-		"Les murs sont tachés de sang, le vieux plancher de bois craque à chacun de tes pas, il fait sombre, les ampoules sont brûlées.");
-
-	plateau.connecterVoisins(&corridor , 0,&cuisine);
-}
 
 			//? Clairement de la duplication de code dans chaque 'case'.
 		case 1:
@@ -191,3 +192,4 @@ int main(int argc, char* argv[])
 		}
 	}
 }
+*/

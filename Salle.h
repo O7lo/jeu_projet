@@ -4,6 +4,7 @@
 #include <iostream>
 
 inline extern const std::string nomsDirections[4] = { "nord","sud","est","ouest" };
+inline extern const int directionsInverses[4] = { 1,0,3,2 };
 
 class Salle {
 public:

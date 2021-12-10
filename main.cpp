@@ -16,6 +16,7 @@
 
 #include <memory>
 #include "Plateau.h"
+#include "Salle.h"
 
 //#if __has_include("gtest/gtest.h")
 //#include "gtest/gtest.h"
@@ -59,8 +60,13 @@ int main(int argc, char* argv[])
 	initialiserBibliothequeCours(argc, argv);
 
 	Plateau plateau;
+	Salle cuisine("Cuisine",
+		"C'est sale, il y a plein de bouffe partout, une tonne de mouches à fruits et une odeur d'oeufs pourris.");
 
-	
+	Salle corridor("Corridor",
+		"Les murs sont tachés de sang, le vieux plancher de bois craque à chacun de tes pas, il fait sombre, les ampoules sont brûlées.");
+
+	plateau.connecterVoisins(&corridor , 0,&cuisine);
 }
 
 

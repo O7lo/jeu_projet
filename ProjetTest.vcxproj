@@ -162,6 +162,8 @@
     <ClCompile Include="bibliotheque_cours\bibliotheque_cours.cpp" />
     <ClCompile Include="bibliotheque_cours\verification_allocation.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Plateau.cpp" />
+    <ClCompile Include="Salle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
@@ -169,6 +171,10 @@
   <ItemGroup>
     <None Include="..\doc\Classroom.md" />
     <None Include="..\doc\Vcpkg.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Plateau.h" />
+    <ClInclude Include="Salle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

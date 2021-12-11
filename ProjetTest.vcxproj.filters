@@ -57,5 +57,8 @@
     <ClInclude Include="Joueur.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="constantesGlobales.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

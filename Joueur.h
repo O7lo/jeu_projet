@@ -1,5 +1,7 @@
 #pragma once
-//#include "Salle.h"
+#include "Salle.h"
+#include <iostream>
+#include "constantesGlobales.h"
 //#include "Plateau.h"
 //#include "Objet.h"
 

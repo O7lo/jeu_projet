@@ -1,5 +1,6 @@
 #pragma once
-#include <string>
+#include <iostream>
+#include "constantesGlobales.h"
 //#include "Plateau.h"
 
 class Salle {

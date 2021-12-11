@@ -13,10 +13,10 @@ void Joueur::regarder(){
 
 void Joueur::deplacer(int direction) {
 	if (salleActuelle_->getVoisins()[direction] == nullptr) {
-		std::cout << "\nJe ne peux pas aller " << nomsDirections[direction];
+		std::cout << "\nJe ne peux pas aller " << nomsDirections[direction]<<", il n'y a rien par là.";
 	}
 	else {
-		std::cout << "\nJe me déplace " << nomsDirections[direction];
+		std::cout << "\nJe me déplace " << nomsDirections[direction]<<".";
 		salleActuelle_ = salleActuelle_->getVoisins()[direction];
 		regarder();
 	}

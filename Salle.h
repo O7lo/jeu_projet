@@ -14,7 +14,7 @@ public:
 	Salle** getVoisins() { return voisins_; }
 
 private:
-	std::string nom_;
-	std::string description_;
+	std::string nom_="pas de nom";
+	std::string description_="pas de description";
 	Salle* voisins_[4] = { nullptr,nullptr,nullptr,nullptr };
 };

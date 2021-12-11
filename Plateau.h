@@ -1,6 +1,6 @@
 #pragma once
 #include <memory>
-#include <vector>
+#include <map>
 #include <iostream>
 #include "Salle.h"
 #include "constantesGlobales.h"
@@ -8,11 +8,15 @@
 class Plateau {
 public:
 	Plateau() = default;
-	void ajouterSalle(std::unique_ptr<Salle> salle);
-	void connecterVoisins(Salle* salle1, int direction, Salle* salle2);
-	void setSalleDeDepart(Salle* salle) { salleDeDepart_ = salle; }
-	Salle* getSalleDeDepart() { return salleDeDepart_; }
+	void ajouterSalle(Salle& salle);
+	void ajouterSalle(std::string nom, std::string description);
+	void connecterVoisins(std::string salle1, int direction, std::string salle2);
+	void ajouterSalleDeDepart(Salle& salle) { ajouterSalle(salle); salleDeDepart_ = salles_[salle.getNom()].get(); }
+	void ajouterSalleDeDepart(std::string nom, std::string description) 
+		{ ajouterSalle(nom, description); salleDeDepart_ = salles_[nom].get(); }
+	void setSalleDeDepart(std::string nom) { salleDeDepart_ = salles_[nom].get(); }
+	Salle* getSalleDeDepart() const { return salleDeDepart_; }
 private:
-	std::vector<std::unique_ptr<Salle>> salles_;
+	std::map<std::string,std::unique_ptr<Salle>> salles_;
 	Salle* salleDeDepart_=nullptr;
 };

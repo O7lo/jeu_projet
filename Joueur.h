@@ -2,12 +2,12 @@
 #include "Salle.h"
 #include <iostream>
 #include "constantesGlobales.h"
-//#include "Plateau.h"
+#include "Plateau.h"
 //#include "Objet.h"
 
 class Joueur {
 public:
-	Joueur(Salle* salle) { salleActuelle_ = salle; }
+	Joueur(const Plateau& plateau) { salleActuelle_ = plateau.getSalleDeDepart(); }
 
 	void setSalleActuelle(Salle* salle) { salleActuelle_ = salle; }
 	Salle* getSalleActuelle() { return salleActuelle_; }

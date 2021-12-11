@@ -54,39 +54,77 @@ using namespace gsl;
 
 #pragma endregion//}
 
+Plateau creerPlateau() {
+	Plateau plateau;
 
+	Salle cuisine("Cuisine","C'est sale, il y a plein de bouffe partout, une tonne de mouches à fruits et une odeur d'oeufs pourris.");
+	Salle entree("Entree", "Cette salle est l'entree, tapis rouge sur le sol");
+	Salle corridor("Corridor","Les murs sont tachés de sang, le vieux plancher de bois craque à chacun de mes pas, il fait sombre, les ampoules sont brûlées.");
+	Salle salon("Salon", "Ce n'est pas le genre de salon auquel je suis habitué. Pauvres enfants, vivre dans cette laideur c'est horrible! Il n'y a même pas de sapin, où vais-je déposer les cadeaux?");
+	plateau.ajouterSalle(salon);
+	plateau.ajouterSalle(cuisine);
+	plateau.ajouterSalle(entree);
+	plateau.ajouterSalle(corridor);
+	plateau.connecterVoisins("Salon", 2, "Corridor");
+	plateau.connecterVoisins("Corridor", 0, "Cuisine");
+	plateau.connecterVoisins("Entree", 0, "Corridor");
+	plateau.setSalleDeDepart("Salon");
+	return plateau;
+}
+
+void afficherCommandes() {
+	cout << "\nRegarder (R)\naller au nord (N)\naller au sud (S)\naller à l'est (E)\naller à l'ouest (O)\nquitter le jeu (Q)";
+}
+
+void introduireJeu() {
+	cout << "\n\n~~~~~~~~~~~~~~~~ Le père noël est arrivé deux mois trop tôt! ~~~~~~~~~~~~~~~~";
+	cout << "\n\n------------------------ Un jeu de Pascal et Arthur ------------------------";
+	cout << "\nListe des commandes:";
+	afficherCommandes();
+}
 
 int main(int argc, char* argv[])
 {
 	initialiserBibliothequeCours(argc, argv);
 
-	Plateau plateau;
-	Salle cuisine("Cuisine",
-		"C'est sale, il y a plein de bouffe partout, une tonne de mouches à fruits et une odeur d'oeufs pourris.");
+	Plateau plateau = creerPlateau();
+	introduireJeu();
+	Joueur joueur(plateau);
+	joueur.regarder();
+	char commande=' ';
+	while (commande != 'Q') {
+		cout << "\n>";
+		cin >> commande;
+		commande = toupper(commande); //on a un avertissement de perte possible de données car toupper fait une conversion de int en char mais vu que le int en question vient d'un char il n'y a pas de problème. 
+		switch (commande) {
+		case 'R':
+			joueur.regarder();
+			break;
+		case 'N':
+			joueur.deplacer(0);
+			break;
+		case 'S':
+			joueur.deplacer(1);
+			break;
+		case 'E':
+			joueur.deplacer(2);
+			break;
+		case 'O':
+			joueur.deplacer(3);
+			break;
+		case 'C':
+			afficherCommandes();
+			break;
+		case 'Q':
+			break;
+		default:
+			cout << "Commande inconnue. Utiliser (C) pour afficher la liste des commandes.";
+		}
+	}
 
-	Salle entree("Entree", "cette salle est l'entree, tapis rouge sur le sol");
-	Salle corridor("Corridor",
-	"Les murs sont tachés de sang, le vieux plancher de bois craque à chacun de tes pas, il fait sombre, les ampoules sont brûlées.");
 
-	plateau.connecterVoisins(&corridor, 0, &cuisine);
 }
-	bool look = false;
-	string commande;
-	//while (true);
-	//{
-	//	Salle salleActuel = entree;
-	//	cout << "Vous etes dans " << salleActuel.getNom() << endl;
-	//	cout << salleActuel.voisin[0].getNom() << "est au nord" << endl;
-	//	cout << salleActuel.voisin[1].getNom() << "est a l'est" << endl;
-	//	cout << "<";
-	//	cin >> commande;
-	//	if (commande.size() == 1) {
-	//		switch (commande[0]) {
-	//		case 'N': salleActuel = entree.voisin[0]; break;
-	//		case 'E': salleActuel = entree.voisin[1];
-	//		}
-	//	}
-	//}
+	
 	/*
 		//? Tout a été mis dans le main, aucun orienté-objet.
 		cout << "Ceci est mon super jeu mal programmé.\n\n";

@@ -1,4 +1,4 @@
 ﻿  main.cpp
-C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(98,21): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
+C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(127,21): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
      Création de la bibliothèque C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.lib et de l'objet C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exp
   ProjetTest.vcxproj -> C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exe

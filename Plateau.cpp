@@ -5,6 +5,11 @@ void Plateau::ajouterSalle(Salle& salle) {
 	std::cout << "salle ajoutée: " << salles_[salle.getNom()]->getNom() << "\t";
 }
 
+void Plateau::ajouterSalle(Salle& salle, int direction, std::string voisin) {
+	ajouterSalle(salle);
+	connecterVoisins(salle.getNom(), direction, voisin);
+}
+
 void Plateau::ajouterSalle(std::string nom, std::string description) {
 	salles_.insert({ nom,make_unique<Salle>(nom,description) });
 }

@@ -75,13 +75,13 @@ Plateau creerPlateau() {
 	plateau.ajouterSalle(entree);
 	plateau.ajouterSalle(corridor);
 
-	plateau.connecterVoisins("Chambre", 3, "Corridor");
-	plateau.connecterVoisins("Salle de bain", 1, "Chambre");
-	plateau.connecterVoisins("Salle de bain", 3, "Cuisine");
-	plateau.connecterVoisins("Labo", 2, "Passage secret");
-	plateau.connecterVoisins("Salon", 2, "Corridor");
-	plateau.connecterVoisins("Corridor", 0, "Cuisine");
-	plateau.connecterVoisins("Entree", 0, "Corridor");
+	plateau.connecterVoisins("Chambre", Direction::ouest, "Corridor");
+	plateau.connecterVoisins("Salle de bain", Direction::sud, "Chambre");
+	plateau.connecterVoisins("Salle de bain", Direction::ouest, "Cuisine");
+	plateau.connecterVoisins("Labo", Direction::est, "Passage secret");
+	plateau.connecterVoisins("Salon", Direction::est, "Corridor");
+	plateau.connecterVoisins("Corridor", Direction::nord, "Cuisine");
+	plateau.connecterVoisins("Entree", Direction::nord, "Corridor");
 
 	plateau.setSalleDeDepart("Salon");
 
@@ -130,16 +130,16 @@ int main(int argc, char* argv[])
 			joueur.regarder();
 			break;
 		case 'N':
-			joueur.deplacer(0);
+			joueur.deplacer(Direction::nord);
 			break;
 		case 'S':
-			joueur.deplacer(1);
+			joueur.deplacer(Direction::sud);
 			break;
 		case 'E':
-			joueur.deplacer(2);
+			joueur.deplacer(Direction::est);
 			break;
 		case 'O':
-			joueur.deplacer(3);
+			joueur.deplacer(Direction::ouest);
 			break;
 		case 'C':
 			afficherCommandes();

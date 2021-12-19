@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include "constantesGlobales.h"
-//#include "Plateau.h"
+#include <array>
 
 class Salle {
 public:
@@ -10,11 +10,11 @@ public:
 	std::string getNom() { return nom_; }
 	void setDescription(std::string description) { description_ = description; }
 	std::string getDescription() { return description_; }
-	void connecterVoisin(Salle* voisin,int direction);
-	Salle** getVoisins() { return voisins_; }
+	void connecterVoisin(Salle* voisin,Direction direction);
+	std::array<Salle*,4> getVoisins() { return voisins_; }
 
 private:
 	std::string nom_="pas de nom";
 	std::string description_="pas de description";
-	Salle* voisins_[4] = { nullptr,nullptr,nullptr,nullptr };
+	std::array<Salle*, 4> voisins_ = { nullptr,nullptr,nullptr,nullptr };
 };

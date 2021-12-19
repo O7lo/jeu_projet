@@ -1,9 +1,8 @@
-﻿  main.cpp
-<<<<<<< HEAD
-C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(127,21): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
+﻿  Joueur.cpp
+  Plateau.cpp
+  Salle.cpp
+  main.cpp
+C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(127,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
+  Génération de code en cours...
      Création de la bibliothèque C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.lib et de l'objet C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exp
   ProjetTest.vcxproj -> C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exe
-=======
-C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\main.cpp(99,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
-  ProjetTest.vcxproj -> C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\x64\Debug\ProjetTest.exe
->>>>>>> 04c315be4b670022121b7dd594daa911afa41d2b

@@ -14,7 +14,7 @@ public:
 	void regarder();
 	//void regarder(const Objet& objet);
 	//void utiliser(Objet& objet);
-	void deplacer(int direction);
+	void deplacer(Direction direction);
 private:
 	Salle* salleActuelle_;
 };

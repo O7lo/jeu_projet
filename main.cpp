@@ -15,9 +15,12 @@
 #include <cppitertools/enumerate.hpp>
 
 #include <memory>
+#include <map>
+#include "Objet.h"
 #include "Plateau.h"
 #include "Salle.h"
 #include "Joueur.h"
+
 
 //#if __has_include("gtest/gtest.h")
 //#include "gtest/gtest.h"

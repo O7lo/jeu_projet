@@ -176,6 +176,7 @@
   <ItemGroup>
     <ClInclude Include="constantesGlobales.h" />
     <ClInclude Include="Joueur.h" />
+    <ClInclude Include="Objet.h" />
     <ClInclude Include="Plateau.h" />
     <ClInclude Include="Salle.h" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 #pragma once
-#include <memory>
-#include <map>
+//#include <memory>
+//#include <map>
 #include <iostream>
 #include "Salle.h"
 #include "constantesGlobales.h"

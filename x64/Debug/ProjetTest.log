@@ -1,8 +1,502 @@
 ﻿  Joueur.cpp
-  main.cpp
-C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(130,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(710,18): error C2672: 'std::construct_at' : fonction correspondante surchargée introuvable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(359): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,
+              _Objty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(364): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,
+              _Objty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1930): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Buynode<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>,_Ty&>(std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>> &,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1931): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Buynode<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>,_Ty&>(std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>> &,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1645): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Buynode<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>&>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1645): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Buynode<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>&>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1666): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_or_move<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::integral_constant<bool,false>>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &,std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag,_Is_set)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Is_set=std::integral_constant<bool,false>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1666): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_or_move<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::integral_constant<bool,false>>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &,std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag,_Is_set)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Is_set=std::integral_constant<bool,false>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1632): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_nodes<_Moveit>(std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Moveit)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1632): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_nodes<_Moveit>(std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Moveit)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(908): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy<std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Moveit)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(908): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy<std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Moveit)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Tree<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Any_alloc &&)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Any_alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Tree<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Any_alloc &&)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Any_alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : pendant la compilation de la fonction membre classe modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::map(const std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>> &)'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(23): message : voir la référence à l'instanciation de la fonction modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::map(const std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>> &)' en cours de compilation
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(22): message : voir la référence à l'instanciation classe modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(710,18): error C2783: '_Ty *std::construct_at(_Ty *const ,_Types &&...) noexcept(<expr>)' : impossible de déduire l'argument modèle pour '<unnamed-symbol>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(142): message : voir la déclaration de 'std::construct_at'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(714,47): error C2280: 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair(const std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' : tentative de référencement d'une fonction supprimée
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(212): message : voir la déclaration de 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(212,5): message : 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair(const std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' : la fonction a été supprimée implicitement, car un données membres appelle une fonction supprimée ou inaccessible 'std::unique_ptr<Objet,std::default_delete<Objet>>::unique_ptr(const std::unique_ptr<Objet,std::default_delete<Objet>> &)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3269,5): message : 'std::unique_ptr<Objet,std::default_delete<Objet>>::unique_ptr(const std::unique_ptr<Objet,std::default_delete<Objet>> &)' : la fonction a été supprimée explicitement
   Plateau.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(710,18): error C2672: 'std::construct_at' : fonction correspondante surchargée introuvable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(359): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,
+              _Objty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(364): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,
+              _Objty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1930): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Buynode<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>,_Ty&>(std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>> &,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1931): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Buynode<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>,_Ty&>(std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>> &,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1645): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Buynode<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>&>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1645): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Buynode<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>&>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1666): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_or_move<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::integral_constant<bool,false>>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &,std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag,_Is_set)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Is_set=std::integral_constant<bool,false>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1666): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_or_move<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::integral_constant<bool,false>>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &,std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag,_Is_set)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Is_set=std::integral_constant<bool,false>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1632): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_nodes<_Moveit>(std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Moveit)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1632): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_nodes<_Moveit>(std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Moveit)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(908): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy<std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Moveit)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(908): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy<std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Moveit)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Tree<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Any_alloc &&)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Any_alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Tree<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Any_alloc &&)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Any_alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : pendant la compilation de la fonction membre classe modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::map(const std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>> &)'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(23): message : voir la référence à l'instanciation de la fonction modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::map(const std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>> &)' en cours de compilation
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(22): message : voir la référence à l'instanciation classe modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(710,18): error C2783: '_Ty *std::construct_at(_Ty *const ,_Types &&...) noexcept(<expr>)' : impossible de déduire l'argument modèle pour '<unnamed-symbol>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(142): message : voir la déclaration de 'std::construct_at'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(714,47): error C2280: 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair(const std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' : tentative de référencement d'une fonction supprimée
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(212): message : voir la déclaration de 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(212,5): message : 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair(const std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' : la fonction a été supprimée implicitement, car un données membres appelle une fonction supprimée ou inaccessible 'std::unique_ptr<Objet,std::default_delete<Objet>>::unique_ptr(const std::unique_ptr<Objet,std::default_delete<Objet>> &)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3269,5): message : 'std::unique_ptr<Objet,std::default_delete<Objet>>::unique_ptr(const std::unique_ptr<Objet,std::default_delete<Objet>> &)' : la fonction a été supprimée explicitement
   Salle.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(710,18): error C2672: 'std::construct_at' : fonction correspondante surchargée introuvable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(359): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,
+              _Objty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(364): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,
+              _Objty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1930): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Buynode<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>,_Ty&>(std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>> &,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1931): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Buynode<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>,_Ty&>(std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>> &,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1645): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Buynode<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>&>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1645): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Buynode<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>&>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1666): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_or_move<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::integral_constant<bool,false>>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &,std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag,_Is_set)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Is_set=std::integral_constant<bool,false>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1666): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_or_move<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::integral_constant<bool,false>>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &,std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag,_Is_set)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Is_set=std::integral_constant<bool,false>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1632): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_nodes<_Moveit>(std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Moveit)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1632): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_nodes<_Moveit>(std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Moveit)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(908): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy<std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Moveit)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(908): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy<std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Moveit)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Tree<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Any_alloc &&)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Any_alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Tree<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Any_alloc &&)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Any_alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : pendant la compilation de la fonction membre classe modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::map(const std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>> &)'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(23): message : voir la référence à l'instanciation de la fonction modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::map(const std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>> &)' en cours de compilation
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(22): message : voir la référence à l'instanciation classe modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(710,18): error C2783: '_Ty *std::construct_at(_Ty *const ,_Types &&...) noexcept(<expr>)' : impossible de déduire l'argument modèle pour '<unnamed-symbol>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(142): message : voir la déclaration de 'std::construct_at'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(714,47): error C2280: 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair(const std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' : tentative de référencement d'une fonction supprimée
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(212): message : voir la déclaration de 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(212,5): message : 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair(const std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' : la fonction a été supprimée implicitement, car un données membres appelle une fonction supprimée ou inaccessible 'std::unique_ptr<Objet,std::default_delete<Objet>>::unique_ptr(const std::unique_ptr<Objet,std::default_delete<Objet>> &)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3269,5): message : 'std::unique_ptr<Objet,std::default_delete<Objet>>::unique_ptr(const std::unique_ptr<Objet,std::default_delete<Objet>> &)' : la fonction a été supprimée explicitement
+  main.cpp
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\main.cpp(125,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(710,18): error C2672: 'std::construct_at' : fonction correspondante surchargée introuvable
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(359): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,
+              _Objty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(364): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,
+              _Objty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1930): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Buynode<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>,_Ty&>(std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>> &,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1931): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Buynode<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>,_Ty&>(std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>> &,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Ty &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Ty=std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1645): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Buynode<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>&>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1645): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Buynode<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>&>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1666): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_or_move<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::integral_constant<bool,false>>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &,std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag,_Is_set)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Is_set=std::integral_constant<bool,false>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1666): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_or_move<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::integral_constant<bool,false>>(std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &,std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag,_Is_set)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Is_set=std::integral_constant<bool,false>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1632): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_nodes<_Moveit>(std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Moveit)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1632): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_nodes<_Moveit>(std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,_Moveit)' en cours de compilation
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(908): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy<std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Moveit)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(908): message : voir la référence à l'instanciation de la fonction modèle 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy<std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Copy_tag>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Moveit)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Moveit=std::_Tree<std::_Tmap_traits<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,false>>::_Copy_tag
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Tree<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Any_alloc &&)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Any_alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : voir la référence à l'instanciation de la fonction modèle 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Tree<std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>(const std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>> &,_Any_alloc &&)' en cours de compilation
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::unique_ptr<Objet,std::default_delete<Objet>>,
+              _Pr=std::less<std::string>,
+              _Alloc=std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>,
+              _Any_alloc=std::allocator<std::_Tree_node<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map(111): message : pendant la compilation de la fonction membre classe modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::map(const std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>> &)'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(23): message : voir la référence à l'instanciation de la fonction modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>::map(const std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>> &)' en cours de compilation
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(22): message : voir la référence à l'instanciation classe modèle 'std::map<std::string,std::unique_ptr<Objet,std::default_delete<Objet>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>>>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(710,18): error C2783: '_Ty *std::construct_at(_Ty *const ,_Types &&...) noexcept(<expr>)' : impossible de déduire l'argument modèle pour '<unnamed-symbol>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(142): message : voir la déclaration de 'std::construct_at'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(714,47): error C2280: 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair(const std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' : tentative de référencement d'une fonction supprimée
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(212): message : voir la déclaration de 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(212,5): message : 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>::pair(const std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>> &)' : la fonction a été supprimée implicitement, car un données membres appelle une fonction supprimée ou inaccessible 'std::unique_ptr<Objet,std::default_delete<Objet>>::unique_ptr(const std::unique_ptr<Objet,std::default_delete<Objet>> &)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3269,5): message : 'std::unique_ptr<Objet,std::default_delete<Objet>>::unique_ptr(const std::unique_ptr<Objet,std::default_delete<Objet>> &)' : la fonction a été supprimée explicitement
   Génération de code en cours...
-     Création de la bibliothèque C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.lib et de l'objet C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exp
-  ProjetTest.vcxproj -> C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exe

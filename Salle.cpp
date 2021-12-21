@@ -6,7 +6,6 @@ void Salle::connecterVoisin(Salle* voisin, Direction direction){
 	std::cout << "voisin connecté: " << voisins_[dir]->getNom()<<" "<< nomsDirections[dir] <<"\t";
 }
 
-//void Salle::ajouterObjet(Objet& objet) {
-//	objets_.insert({ objet.getNom(), std::make_unique<Objet>(objet) });
-//	std::cout << "objet ajoutee dans la salle: " << objets_[objet.getNom()]->getNom() << "\t";
-//}
+void Salle::ajouterObjet(Objet& objet) {
+	objets_.insert({ objet.getNom(), std::make_unique<Objet>(objet) });
+}

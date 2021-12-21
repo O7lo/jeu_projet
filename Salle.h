@@ -1,10 +1,11 @@
 #pragma once
 #include <iostream>
+#include <memory>
+#include <string>
 #include "constantesGlobales.h"
 #include "Objet.h"
-//#include <array>
 #include <map>
-//#include <memory>
+
 
 class Salle {
 public:
@@ -23,7 +24,7 @@ public:
 	std::string getDescription() { return description_; }
 	void connecterVoisin(Salle* voisin,Direction direction);
 	std::array<Salle*,4> getVoisins() { return voisins_; }
-	//void ajouterObjet(Objet& objet);
+	void ajouterObjet(Objet& objet);
 
 
 private:

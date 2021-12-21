@@ -87,19 +87,14 @@ Plateau creerPlateau() {
 	plateau.connecterVoisins("Entree", Direction::nord, "Corridor");
 
 	plateau.setSalleDeDepart("Salon");
+	Objet clef("Cle", "C'est la clee pour la porte");
+	Objet toilet("toilet", "plein de merde");
 
-	/*
-	unique_ptr<Objet> junkie = make_unique("Junkie","Il ressemble vraiment à un cadavre, mais je vois son torse se soulever légèrement quand il inspire. Il a vraiment mauvaise mine, je peux voir la forme de ses os sous sa peau mince de couleur maladive. Il s'est endormi avec une bière qu'il tient encore fermement dans sa main gauche comme un enfant qui se serait endormi avec son toutou préféré. Tiens, on dirait une clef qui dépasse de sous son aisselle.","Je ne peux pas croire que je suis en train de faire ca, je voulais juste donner des cadeaux aux enfants moi! Mais cette clef peut probablement m'aider à sortir de cette maison de cauchemards. Ca pue la mort! Ce junkie ne s'est probablement pas lavé depuis des mois! Je me sens si sale maintenant que je l'ai touché!","Pauvre type. J'espère qu'il ne sera pas faché que j'aie pris sa clef.");
-	unique_ptr<Objet> clef = make_unique("Clef","C'est une clef que j'ai trouvée sous l'aisselle du junkie. Elle est rouillée et elle empeste la sueur.");
-
-	junkie.ajouterObjet(clef);
+	unique_ptr<Objet> cle = make_unique<Objet>(clef);
 	
-	chambre.ajouterObjet(junkie);
-	*/
+	salleDeBain.ajouterObjet(toilet);
+	
 
-	//NOTE:utiliser le patron composite pour les objets. (on pourrait avoir un objet poupée russe)
-	//NOTE:les objets contenus dans d'autres objets vont dans l'inventaire du joueur quand le joueur a regardé l'objet conteneur assez souvent, c'est à dire le nombre de dialogues moins 1.
-	//NOTE:pour les utilisations d'objet je pense que ce serait les salles qui devraient gérer cela.
 
 	return plateau;
 }

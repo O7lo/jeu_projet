@@ -19,5 +19,5 @@ private:
 	
 	std::string nom_;
 	std::string description_;
-	std::map<std::string, std::unique_ptr<Objet>> objets_;
+	//std::map<std::string, std::unique_ptr<Objet>> objets_;
 };

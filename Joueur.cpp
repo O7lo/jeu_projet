@@ -1,6 +1,19 @@
 #include "Joueur.h"
 
-void Joueur::regarder(){
+void Joueur::executerCommande(std::string commande) {
+	std::string argument = commande.substr(commande.find(" ")+1,commande.size());
+	std::string action = commande.substr(0, commande.find(" "));
+	try {
+		auto fonction = commandes_.at(action);
+		(this->*fonction)(argument);
+	}
+	catch (const std::out_of_range&) {
+		std::cout << "Commande inconnue. Utiliser (C) pour afficher la liste des commandes.";
+	}
+	
+}
+
+void Joueur::regarder(std::string quoi){
 	std::cout << "\n\n-----------"<<salleActuelle_->getNom()<< "-----------";
 	std::cout << std::endl << salleActuelle_->getDescription();
 	int i = 0;
@@ -12,6 +25,10 @@ void Joueur::regarder(){
 	}
 }
 
+void Joueur::utiliser(std::string) {
+	
+}
+
 void Joueur::deplacer(Direction direction) {
 	int dir=static_cast<int>(direction);
 	if (salleActuelle_->getVoisins()[dir] == nullptr) {
@@ -21,5 +38,32 @@ void Joueur::deplacer(Direction direction) {
 		std::cout << "\nJe me déplace " << nomsDirections[dir]<<".";
 		salleActuelle_ = salleActuelle_->getVoisins()[dir];
 		regarder();
+	}
+}
+
+void Joueur::afficherInventaire(std::string) {
+
+}
+
+void Joueur::afficherCommandes(std::string) {
+	std::cout << "afficherCommandes"; 
+}
+
+void Joueur::quitter(std::string) {
+	//si on a l'enfant dans notre inventaire: message jeu gagné, sinon message jeu échoué
+	std::cout << "quitter"; 
+	continuerAJouer_ = false;
+}
+
+void Joueur::jouer() {
+	continuerAJouer_ = true;
+	regarder();
+	std::string commande;
+	while (continuerAJouer_) {
+		std::cout << "\n>";
+		std::getline(std::cin, commande);
+		std::transform(commande.begin(), commande.end(), commande.begin(),
+			[](unsigned char c) { return std::tolower(c); }); //ne fonctionne pas pour tous les caractères de tous les encodages mais fonctionne pour tous ceux que nous utilisons. 
+		executerCommande(commande);
 	}
 }

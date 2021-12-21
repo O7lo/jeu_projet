@@ -90,11 +90,32 @@ Plateau creerPlateau() {
 	Objet clef("Cle", "C'est la clee pour la porte");
 	Objet toilet("toilet", "plein de merde");
 
+	
+	/*unique_ptr<Objet> junkie = make_unique<Objet>("Junkie","Il ressemble vraiment à un cadavre, mais je vois son torse se soulever légèrement quand il inspire. Il a vraiment mauvaise mine, je peux voir la forme de ses os sous sa peau mince de couleur maladive. Il s'est endormi avec une bière qu'il tient encore fermement dans sa main gauche comme un enfant qui se serait endormi avec son toutou préféré. Tiens, on dirait une clef qui dépasse de sous son aisselle.","Je ne peux pas croire que je suis en train de faire ca, je voulais juste donner des cadeaux aux enfants moi! Mais cette clef peut probablement m'aider à sortir de cette maison de cauchemards. Ca pue la mort! Ce junkie ne s'est probablement pas lavé depuis des mois! Je me sens si sale maintenant que je l'ai touché!","Pauvre type. J'espère qu'il ne sera pas faché que j'aie pris sa clef.");
+	unique_ptr<Objet> clef = make_unique<Objet>("Clef","C'est une clef que j'ai trouvée sous l'aisselle du junkie. Elle est rouillée et elle empeste la sueur.");
+	unique_ptr<Objet> enfant = make_unique<Objet>("Enfant", "Il a l'air terrorisé. Il ou Elle? Difficile à dire vu son état pitoyable. Son visage me rappelle celui du Junkie. Ce doit être son père. L'enfant tient un toutou à l'air maléfique. Il a un air si défraichi que même la laveuse ne saurait réduire la crasse dont il est enduite. Peu importe. Je suis venu ici avec une seule mission : donner un cadeau à un enfant. J'ai justement une chose à lui offrir : de la liberté.");
+	unique_ptr<Objet> Poison = make_unique<Objet>("Poison", "Du poison à rat se trouve par-terre dans le laboratoire. Des rats morts jonchent le sol. On dirait un poison fait maison. OH! Il se passe ma foi des choses malsaines dans ce lieu. ");*/
+
 	unique_ptr<Objet> cle = make_unique<Objet>(clef);
 	
 	salleDeBain.ajouterObjet(toilet);
 	
+	chambre.ajouterObjet(junkie);
+	//junkie.ajouterObjet(clef);
+	
+	//chambre.ajouterObjet(junkie);
 
+	//laboratoire.ajouterObjet(poison);
+
+	
+
+	
+
+	//NOTE:utiliser le patron composite pour les objets. (on pourrait avoir un objet poupée russe)
+	//NOTE:les objets contenus dans d'autres objets vont dans l'inventaire du joueur quand le joueur a regardé l'objet conteneur assez souvent, c'est à dire le nombre de dialogues moins 1.
+	//NOTE:pour les utilisations d'objet je pense que ce serait les salles qui devraient gérer cela.
+	//NOTE:les objets contenus dans d'autres objets vont dans l'inventaire du joueur quand le joueur a regardé l'objet conteneur assez souvent, c'est à dire le nombre de dialogues moins 1.
+	//NOTE:pour les utilisations d'objet je pense que ce serait les salles qui devraient gérer cela.
 
 	return plateau;
 }
@@ -117,35 +138,5 @@ int main(int argc, char* argv[])
 	Plateau plateau = creerPlateau();
 	introduireJeu();
 	Joueur joueur(plateau);
-	joueur.regarder();
-	string commande = " ";
-	while (commande[0] != 'Q') {
-		cout << "\n>";
-		cin >> commande;
-		commande[0] = toupper(commande[0]); //on a un avertissement de perte possible de données car toupper fait une conversion de int en char mais vu que le int en question vient d'un char il n'y a pas de problème. 
-		switch (commande[0]) {
-		case 'R':
-			joueur.regarder();
-			break;
-		case 'N':
-			joueur.deplacer(Direction::nord);
-			break;
-		case 'S':
-			joueur.deplacer(Direction::sud);
-			break;
-		case 'E':
-			joueur.deplacer(Direction::est);
-			break;
-		case 'O':
-			joueur.deplacer(Direction::ouest);
-			break;
-		case 'C':
-			afficherCommandes();
-			break;
-		case 'Q':
-			break;
-		default:
-			cout << "Commande inconnue. Utiliser (C) pour afficher la liste des commandes.";
-		}
-	}
+	joueur.jouer();
 }

@@ -1,8 +1,12 @@
 ﻿  Joueur.cpp
-  main.cpp
-C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(130,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
-  Plateau.cpp
-  Salle.cpp
-  Génération de code en cours...
+D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\algorithm(2892,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
+C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(66): message : voir la référence à l'instanciation de la fonction modèle '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,Joueur::jouer::<lambda_1>>(const _InIt,const _InIt,_OutIt,_Fn)' en cours de compilation
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Fn=Joueur::jouer::<lambda_1>
+          ]
      Création de la bibliothèque C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.lib et de l'objet C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exp
   ProjetTest.vcxproj -> C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exe

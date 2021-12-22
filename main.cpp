@@ -91,25 +91,19 @@ Plateau creerPlateau() {
 
 	plateau.setSalleDeDepart("Salon");
 
-	ObjetSerrure clef("Cle", "C'est la clee pour la porte");
-	ObjetNormal toilet("Toilet", "plein de merde");
+	ObjetNormal junkie("Junkie", "Il ressemble vraiment à un cadavre, mais je vois son torse se soulever légèrement quand il inspire. Il a vraiment mauvaise mine, je peux voir la forme de ses os sous sa peau mince de couleur maladive. Il s'est endormi avec une bière qu'il tient encore fermement dans sa main gauche comme un enfant qui se serait endormi avec son toutou préféré. Tiens, on dirait une clef qui dépasse de sous son aisselle. Je ne peux pas croire que je suis en train de faire ca, je voulais juste donner des cadeaux aux enfants moi! Mais cette clef peut probablement m'aider à sortir de cette maison de cauchemards. Ca pue la mort! Ce junkie ne s'est probablement pas lavé depuis des mois! Je me sens si sale maintenant que je l'ai touché! Pauvre type. J'espère qu'il ne sera pas faché que j'aie pris sa clef.");
 
 	
-	/*unique_ptr<Objet> junkie = make_unique<Objet>("Junkie","Il ressemble vraiment à un cadavre, mais je vois son torse se soulever légèrement quand il inspire. Il a vraiment mauvaise mine, je peux voir la forme de ses os sous sa peau mince de couleur maladive. Il s'est endormi avec une bière qu'il tient encore fermement dans sa main gauche comme un enfant qui se serait endormi avec son toutou préféré. Tiens, on dirait une clef qui dépasse de sous son aisselle.","Je ne peux pas croire que je suis en train de faire ca, je voulais juste donner des cadeaux aux enfants moi! Mais cette clef peut probablement m'aider à sortir de cette maison de cauchemards. Ca pue la mort! Ce junkie ne s'est probablement pas lavé depuis des mois! Je me sens si sale maintenant que je l'ai touché!","Pauvre type. J'espère qu'il ne sera pas faché que j'aie pris sa clef.");
-	unique_ptr<Objet> clef = make_unique<Objet>("Clef","C'est une clef que j'ai trouvée sous l'aisselle du junkie. Elle est rouillée et elle empeste la sueur.");
-	unique_ptr<Objet> enfant = make_unique<Objet>("Enfant", "Il a l'air terrorisé. Il ou Elle? Difficile à dire vu son état pitoyable. Son visage me rappelle celui du Junkie. Ce doit être son père. L'enfant tient un toutou à l'air maléfique. Il a un air si défraichi que même la laveuse ne saurait réduire la crasse dont il est enduite. Peu importe. Je suis venu ici avec une seule mission : donner un cadeau à un enfant. J'ai justement une chose à lui offrir : de la liberté.");
-	unique_ptr<Objet> Poison = make_unique<Objet>("Poison", "Du poison à rat se trouve par-terre dans le laboratoire. Des rats morts jonchent le sol. On dirait un poison fait maison. OH! Il se passe ma foi des choses malsaines dans ce lieu. ");*/
-	
-	cuisine.ajouterObjet(toilet);
-	//toilet.ajouterObjet(clef);
-	
-	//chambre.ajouterObjet(junkie);
-	//junkie.ajouterObjet(clef);
-	
-	//chambre.ajouterObjet(junkie);
+	ObjetSerrure clef("Clef","C'est une clef que j'ai trouvée sous l'aisselle du junkie. Elle est rouillée et elle empeste la sueur.");
+	ObjetNormal enfant("Enfant", "Il a l'air terrorisé. Il ou Elle? Difficile à dire vu son état pitoyable. Son visage me rappelle celui du Junkie. Ce doit être son père. L'enfant tient un toutou à l'air maléfique. Il a un air si défraichi que même la laveuse ne saurait réduire la crasse dont il est enduite. Peu importe. Je suis venu ici avec une seule mission : donner un cadeau à un enfant. J'ai justement une chose à lui offrir : de la liberté.");
+	ObjetNormal poison("Poison", "Du poison à rat se trouve par-terre dans le laboratoire. Des rats morts jonchent le sol. On dirait un poison fait maison. OH! Il se passe ma foi des choses malsaines dans ce lieu. ");
 
-	//laboratoire.ajouterObjet(poison);
 
+	chambre.ajouterObjet(junkie);
+	junkie.ajouterObjet(clef);
+	labo.ajouterObjet(poison);
+
+	chambre.setDescription(junkie.getDescription());
 	
 
 	
@@ -131,13 +125,14 @@ void introduireJeu() {
 	cout << "\n\n~~~~~~~~~~~~~~~~ Le père noël est arrivé deux mois trop tôt! ~~~~~~~~~~~~~~~~";
 	cout << "\n\n------------------------ Un jeu de Pascal et Arthur ------------------------";
 	cout << "\nListe des commandes:";
+	
 	afficherCommandes();
 }
 
 int main(int argc, char* argv[])
 {
 	initialiserBibliothequeCours(argc, argv);
-
+	
 	Plateau plateau = creerPlateau();
 	introduireJeu();
 	Joueur joueur(plateau);

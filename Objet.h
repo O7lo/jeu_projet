@@ -7,6 +7,7 @@
 
 class Objet {
 public:
+
 	Objet() = default;
 	~Objet() = default;
 	std::string getNom() { return nom_; }

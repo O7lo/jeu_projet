@@ -26,4 +26,5 @@ void Salle::connecterVoisin(Salle* voisin, Direction direction){
 
 void Salle::ajouterObjet(ObjetNormal& objet) {
 	objets_.insert({ objet.getNom(), std::make_unique<ObjetNormal>(objet)});
+	std::cout << "objet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
 }

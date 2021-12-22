@@ -1,11 +1,12 @@
 #pragma once
 #include <iostream>
+#include <memory>
+#include <string>
 #include "constantesGlobales.h"
 #include "Objet.h"
 #include <vector>
 #include <map>
 #include <ranges>
-//#include <memory>
 
 class Salle {
 public:
@@ -28,7 +29,7 @@ public:
 	std::vector<std::string> getNomsObjets() const;
 	std::map<std::string, Objet*> getMotsImportantsObjets() const;
 	bool aUnObjet() { return objets_.size() > 0; }
-	//void ajouterObjet(Objet& objet);
+	void ajouterObjet(Objet& objet);
 
 
 private:

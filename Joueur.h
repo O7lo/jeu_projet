@@ -1,6 +1,6 @@
 #pragma once
 #include "Salle.h"
-#include <iostream>
+#include <iostream>	
 #include "constantesGlobales.h"
 #include "Plateau.h"
 #include <algorithm>

@@ -32,23 +32,20 @@ void Joueur::regarder(std::string quoi){
 		}
 	}
 	else {
-		std::map<std::string, Objet*> motsImportants = salleActuelle_->getMotsImportantsObjets();
-		bool objetTrouve = false;
-		for (auto [mot,objetPtr] : motsImportants) {
-			if (quoi.find(mot) != quoi.npos) {
-				std::cout<<"\n"<<objetPtr->getDescription();
-				objetTrouve = true;
-				break;
-			}
+		Objet* objet = trouverObjet(quoi);
+		if(objet!=nullptr){
+			std::cout<<"\n"<<objet->getDescription();
 		}
-		if (!objetTrouve) {
-			std::cout << "\nDésolé, je ne trouve pas cet objet.";
-		}
+		else { std::cout << "\nDésolé, je ne trouve pas cet objet."; }
 	}
 }
 
-void Joueur::utiliser(std::string) {
-	
+void Joueur::utiliser(std::string quoi) {
+	Objet* objet = trouverObjet(quoi);
+	if (objet != nullptr) {
+		//std::cout << "\n" << objet->utiliser(getNomsObjets());
+	}
+	else { std::cout << "\nDésolé, je ne trouve pas cet objet."; }
 }
 
 void Joueur::deplacer(Direction direction) {
@@ -64,11 +61,17 @@ void Joueur::deplacer(Direction direction) {
 }
 
 void Joueur::afficherInventaire(std::string) {
-
+	if (getNomsObjets().size() > 0) {
+		std::cout << "\nHOHOHO! J'ai avec moi :";
+		for (auto nomObjet : getNomsObjets()) {
+			std::cout << "\n\t" << nomObjet;
+		}
+	}
+	else std::cout << "\nHOHOHO! Je n'ai rien pris avec moi encore.";
 }
 
 void Joueur::afficherCommandes(std::string) {
-	std::cout << "afficherCommandes"; 
+	std::cout << "\nRegarder (r) + nom d'un objet (optionnel)\nutiliser (u) + nom d'un objet\naller au nord (n)\naller au sud (s)\naller à l'est (e)\naller à l'ouest (o)\nquitter le jeu (q)";
 }
 
 void Joueur::quitter(std::string) {
@@ -79,6 +82,7 @@ void Joueur::quitter(std::string) {
 
 void Joueur::jouer() {
 	continuerAJouer_ = true;
+	afficherCommandes();
 	regarder();
 	std::string commande;
 	while (continuerAJouer_) {
@@ -88,4 +92,21 @@ void Joueur::jouer() {
 			[](unsigned char c) { return std::tolower(c); }); //ne fonctionne pas pour tous les caractères de tous les encodages mais fonctionne pour tous ceux que nous utilisons. 
 		executerCommande(commande);
 	}
+}
+
+Objet* Joueur::trouverObjet(std::string quoi) {
+	for (auto [mot, objetPtr] : salleActuelle_->getMotsImportantsObjets()) {
+		if (quoi.find(mot) != quoi.npos) {
+			return objetPtr;
+		}
+	}
+	return nullptr;
+}
+
+std::vector<std::string> Joueur::getNomsObjets() const {
+	std::vector<std::string> nomsObjets;
+	for (auto&& clef : inventaire_ | std::ranges::views::keys) {
+		nomsObjets.push_back(clef);
+	}
+	return nomsObjets;
 }

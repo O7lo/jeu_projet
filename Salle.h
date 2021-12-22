@@ -4,6 +4,7 @@
 #include <string>
 #include "constantesGlobales.h"
 #include "Objet.h"
+#include "ObjetNormal.h"
 #include <map>
 
 
@@ -15,7 +16,7 @@ public:
 		description_ = autre.description_; 
 		for (const auto& [nom,objet] : autre.objets_) {
 			std::string nomCopie = nom;
-			objets_.insert({ nomCopie,std::make_unique<Objet>(*objet) });
+			objets_.insert({ nomCopie,std::make_unique<ObjetNormal>(*objet) });
 		}
 	}
 	void setNom(std::string nom) { nom_ = nom; }
@@ -24,12 +25,12 @@ public:
 	std::string getDescription() { return description_; }
 	void connecterVoisin(Salle* voisin,Direction direction);
 	std::array<Salle*,4> getVoisins() { return voisins_; }
-	void ajouterObjet(Objet& objet);
+	void ajouterObjet(ObjetNormal& objet);
 
 
 private:
 	std::string nom_="pas de nom";
 	std::string description_="pas de description";
 	std::array<Salle*, 4> voisins_ = { nullptr,nullptr,nullptr,nullptr };
-	std::map<std::string, std::unique_ptr<Objet>> objets_;
+	std::map < std::string, std::unique_ptr<ObjetNormal>> objets_;
 };

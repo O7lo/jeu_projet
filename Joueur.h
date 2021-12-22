@@ -5,6 +5,7 @@
 #include "Plateau.h"
 #include <algorithm>
 
+
 class Joueur {
 public:
 	Joueur(const Plateau& plateau) { salleActuelle_ = plateau.getSalleDeDepart(); }
@@ -44,6 +45,6 @@ private:
 		{std::string("q"),&Joueur::quitter} ,
 		{std::string("c"),&Joueur::afficherCommandes} ,
 		{std::string("commandes"),&Joueur::afficherCommandes} };
-	std::map<std::string, std::unique_ptr<Objet>> inventaire_;
+	std::map<std::string, std::unique_ptr<ObjetNormal>> inventaire_;
 	bool continuerAJouer_ = false;
 };

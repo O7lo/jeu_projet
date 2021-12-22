@@ -100,7 +100,7 @@ Plateau creerPlateau() {
 	
 	salleDeBain.ajouterObjet(toilet);
 	
-	chambre.ajouterObjet(junkie);
+	//chambre.ajouterObjet(junkie);
 	//junkie.ajouterObjet(clef);
 	
 	//chambre.ajouterObjet(junkie);
@@ -120,15 +120,10 @@ Plateau creerPlateau() {
 	return plateau;
 }
 
-void afficherCommandes() {
-	cout << "\nRegarder (R)\naller au nord (N)\naller au sud (S)\naller à l'est (E)\naller à l'ouest (O)\nquitter le jeu (Q)";
-}
-
 void introduireJeu() {
 	cout << "\n\n~~~~~~~~~~~~~~~~ Le père noël est arrivé deux mois trop tôt! ~~~~~~~~~~~~~~~~";
 	cout << "\n\n------------------------ Un jeu de Pascal et Arthur ------------------------";
 	cout << "\nListe des commandes:";
-	afficherCommandes();
 }
 
 int main(int argc, char* argv[])

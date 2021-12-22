@@ -23,6 +23,7 @@ public:
 	void executerCommande(std::string commande);
 	void afficherInventaire(std::string);
 	void jouer();
+	std::vector<std::string> getNomsObjets() const;
 private:
 	Salle* salleActuelle_;
 	std::map<std::string, void (Joueur::*)(std::string) > commandes_ = { 
@@ -46,4 +47,5 @@ private:
 		{std::string("commandes"),&Joueur::afficherCommandes} };
 	std::map<std::string, std::unique_ptr<Objet>> inventaire_;
 	bool continuerAJouer_ = false;
+	Objet* trouverObjet(std::string);
 };

@@ -4,9 +4,10 @@
 #include <string>
 #include "constantesGlobales.h"
 #include "Objet.h"
+#include <vector>
 #include "ObjetNormal.h"
 #include <map>
-
+#include <ranges>
 
 class Salle {
 public:
@@ -25,7 +26,11 @@ public:
 	std::string getDescription() { return description_; }
 	void connecterVoisin(Salle* voisin,Direction direction);
 	std::array<Salle*,4> getVoisins() { return voisins_; }
-	void ajouterObjet(ObjetNormal& objet);
+	Objet* getObjet(std::string nom)const { return objets_.at(nom).get(); }
+	std::vector<std::string> getNomsObjets() const;
+	std::map<std::string, Objet*> getMotsImportantsObjets() const;
+	bool aUnObjet() { return objets_.size() > 0; }
+	void ajouterObjet(Objet& objet);
 
 
 private:

@@ -61,7 +61,13 @@ void Joueur::deplacer(Direction direction) {
 }
 
 void Joueur::afficherInventaire(std::string) {
-
+	if (getNomsObjets().size() > 0) {
+		std::cout << "\nHOHOHO! J'ai avec moi :";
+		for (auto nomObjet : getNomsObjets()) {
+			std::cout << "\n\t" << nomObjet;
+		}
+	}
+	else std::cout << "\nHOHOHO! Je n'ai rien pris avec moi encore.";
 }
 
 void Joueur::afficherCommandes(std::string) {

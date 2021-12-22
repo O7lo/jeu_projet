@@ -60,7 +60,13 @@
     <ClInclude Include="constantesGlobales.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ObjetNormal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Objet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjetSerrure.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

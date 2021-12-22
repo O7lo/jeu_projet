@@ -5,6 +5,7 @@
 #include "constantesGlobales.h"
 #include "Objet.h"
 #include <vector>
+#include "ObjetNormal.h"
 #include <map>
 #include <ranges>
 
@@ -16,7 +17,7 @@ public:
 		description_ = autre.description_; 
 		for (const auto& [nom,objet] : autre.objets_) {
 			std::string nomCopie = nom;
-			objets_.insert({ nomCopie,std::make_unique<Objet>(*objet) });
+			objets_.insert({ nomCopie,std::make_unique<ObjetNormal>(*objet) });
 		}
 	}
 	void setNom(std::string nom) { nom_ = nom; }
@@ -29,12 +30,12 @@ public:
 	std::vector<std::string> getNomsObjets() const;
 	std::map<std::string, Objet*> getMotsImportantsObjets() const;
 	bool aUnObjet() { return objets_.size() > 0; }
-	void ajouterObjet(Objet& objet);
+	void ajouterObjet(ObjetNormal& objet);
 
 
 private:
 	std::string nom_="pas de nom";
 	std::string description_="pas de description";
 	std::array<Salle*, 4> voisins_ = { nullptr,nullptr,nullptr,nullptr };
-	std::map<std::string, std::unique_ptr<Objet>> objets_;
+	std::map < std::string, std::unique_ptr<ObjetNormal>> objets_;
 };

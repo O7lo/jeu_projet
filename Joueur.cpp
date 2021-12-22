@@ -14,14 +14,36 @@ void Joueur::executerCommande(std::string commande) {
 }
 
 void Joueur::regarder(std::string quoi){
-	std::cout << "\n\n-----------"<<salleActuelle_->getNom()<< "-----------";
-	std::cout << std::endl << salleActuelle_->getDescription();
-	int i = 0;
-	for (auto voisin:salleActuelle_->getVoisins()) {
-		if (voisin != nullptr) {
-			std::cout << "\nIl y a " << voisin->getNom() << " " << nomsDirections[i] << " (" << symbolesDirections[i]<<")";
+	if (quoi == "regarder" || quoi == "r") {
+		std::cout << "\n\n-----------"<<salleActuelle_->getNom()<< "-----------";
+		std::cout << std::endl << salleActuelle_->getDescription();
+		int i = 0;
+		for (auto voisin:salleActuelle_->getVoisins()) {
+			if (voisin != nullptr) {
+				std::cout << "\nIl y a " << voisin->getNom() << " " << nomsDirections[i] << " (" << symbolesDirections[i]<<")";
+			}
+			i++;
 		}
-		i++;
+		if (salleActuelle_->aUnObjet()) {
+			std::cout << "\n\nJe vois :";
+					for (auto nomObjet : salleActuelle_->getNomsObjets()) {
+						std::cout << "\n\t" << nomObjet;
+					}
+		}
+	}
+	else {
+		std::map<std::string, Objet*> motsImportants = salleActuelle_->getMotsImportantsObjets();
+		bool objetTrouve = false;
+		for (auto [mot,objetPtr] : motsImportants) {
+			if (quoi.find(mot) != quoi.npos) {
+				std::cout<<"\n"<<objetPtr->getDescription();
+				objetTrouve = true;
+				break;
+			}
+		}
+		if (!objetTrouve) {
+			std::cout << "\nDésolé, je ne trouve pas cet objet.";
+		}
 	}
 }
 

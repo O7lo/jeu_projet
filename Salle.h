@@ -31,11 +31,11 @@ public:
 	std::map<std::string, Objet*> getMotsImportantsObjets() const;
 	bool aUnObjet() { return objets_.size() > 0; }
 	void ajouterObjet(ObjetNormal& objet);
-
+	void ajouterObjet(ObjetSerrure& objet);
 
 private:
 	std::string nom_="pas de nom";
 	std::string description_="pas de description";
 	std::array<Salle*, 4> voisins_ = { nullptr,nullptr,nullptr,nullptr };
-	std::map < std::string, std::unique_ptr<ObjetNormal>> objets_;
+	std::map < std::string, std::unique_ptr<Objet>> objets_;
 };

@@ -1,11 +1,38 @@
 ﻿  Joueur.cpp
-<<<<<<< HEAD
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3120,9): warning C5205: la suppression d'une classe abstraite 'Objet' qui a un destructeur non virtuel entraîne un comportement indéfini
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(8): message : voir la déclaration de 'Objet'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3118): message : pendant la compilation de la fonction membre classe modèle 'void std::default_delete<Objet>::operator ()(_Ty *) noexcept const'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3230): message : voir la référence à l'instanciation de la fonction modèle 'void std::default_delete<Objet>::operator ()(_Ty *) noexcept const' en cours de compilation
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3157): message : voir la référence à l'instanciation classe modèle 'std::default_delete<Objet>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(332): message : voir la référence à l'instanciation classe modèle 'std::unique_ptr<Objet,std::default_delete<Objet>>' en cours de compilation
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.h(18): message : voir la référence à l'instanciation classe modèle 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): error C2664: 'ObjetNormal::ObjetNormal(const ObjetNormal &)' : impossible de convertir l'argument 1 de '_Ty' en 'const ObjetNormal &'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3415,1): message : Raison : impossible de convertir de '_Ty' en 'const ObjetNormal'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,56): message : Aucun opérateur de conversion définie par l'utilisateur disponible qui puisse effectuer cette conversion, ou l'opérateur ne peut pas être appelé
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\ObjetNormal.h(14,2): message : voir la déclaration de 'ObjetNormal::ObjetNormal'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.h(20): message : voir la référence à l'instanciation de la fonction modèle 'std::unique_ptr<ObjetNormal,std::default_delete<ObjetNormal>> std::make_unique<ObjetNormal,_Ty&,0>(_Ty &)' en cours de compilation
+          with
+          [
+              _Ty=Objet
+          ]
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(2892,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
-C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Joueur.cpp(91): message : voir la référence à l'instanciation de la fonction modèle '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,Joueur::jouer::<lambda_1>>(const _InIt,const _InIt,_OutIt,_Fn)' en cours de compilation
-=======
-D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\algorithm(2892,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
-C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(97): message : voir la référence à l'instanciation de la fonction modèle '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,Joueur::jouer::<lambda_1>>(const _InIt,const _InIt,_OutIt,_Fn)' en cours de compilation
->>>>>>> 677fd8d108cd5d673a0126729086cc664dc9a3f4
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Joueur.cpp(96): message : voir la référence à l'instanciation de la fonction modèle '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,Joueur::jouer::<lambda_1>>(const _InIt,const _InIt,_OutIt,_Fn)' en cours de compilation
           with
           [
               _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
@@ -13,14 +40,115 @@ C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(97): message : voir la r
               _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
               _Fn=Joueur::jouer::<lambda_1>
           ]
-<<<<<<< HEAD
   main.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3120,9): warning C5205: la suppression d'une classe abstraite 'Objet' qui a un destructeur non virtuel entraîne un comportement indéfini
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(8): message : voir la déclaration de 'Objet'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3118): message : pendant la compilation de la fonction membre classe modèle 'void std::default_delete<Objet>::operator ()(_Ty *) noexcept const'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3230): message : voir la référence à l'instanciation de la fonction modèle 'void std::default_delete<Objet>::operator ()(_Ty *) noexcept const' en cours de compilation
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3157): message : voir la référence à l'instanciation classe modèle 'std::default_delete<Objet>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(332): message : voir la référence à l'instanciation classe modèle 'std::unique_ptr<Objet,std::default_delete<Objet>>' en cours de compilation
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.h(18): message : voir la référence à l'instanciation classe modèle 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): error C2664: 'ObjetNormal::ObjetNormal(const ObjetNormal &)' : impossible de convertir l'argument 1 de '_Ty' en 'const ObjetNormal &'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3415,1): message : Raison : impossible de convertir de '_Ty' en 'const ObjetNormal'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,56): message : Aucun opérateur de conversion définie par l'utilisateur disponible qui puisse effectuer cette conversion, ou l'opérateur ne peut pas être appelé
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\ObjetNormal.h(14,2): message : voir la déclaration de 'ObjetNormal::ObjetNormal'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.h(20): message : voir la référence à l'instanciation de la fonction modèle 'std::unique_ptr<ObjetNormal,std::default_delete<ObjetNormal>> std::make_unique<ObjetNormal,_Ty&,0>(_Ty &)' en cours de compilation
+          with
+          [
+              _Ty=Objet
+          ]
   Plateau.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3120,9): warning C5205: la suppression d'une classe abstraite 'Objet' qui a un destructeur non virtuel entraîne un comportement indéfini
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(8): message : voir la déclaration de 'Objet'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3118): message : pendant la compilation de la fonction membre classe modèle 'void std::default_delete<Objet>::operator ()(_Ty *) noexcept const'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3230): message : voir la référence à l'instanciation de la fonction modèle 'void std::default_delete<Objet>::operator ()(_Ty *) noexcept const' en cours de compilation
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3157): message : voir la référence à l'instanciation classe modèle 'std::default_delete<Objet>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(332): message : voir la référence à l'instanciation classe modèle 'std::unique_ptr<Objet,std::default_delete<Objet>>' en cours de compilation
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.h(18): message : voir la référence à l'instanciation classe modèle 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): error C2664: 'ObjetNormal::ObjetNormal(const ObjetNormal &)' : impossible de convertir l'argument 1 de '_Ty' en 'const ObjetNormal &'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3415,1): message : Raison : impossible de convertir de '_Ty' en 'const ObjetNormal'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,56): message : Aucun opérateur de conversion définie par l'utilisateur disponible qui puisse effectuer cette conversion, ou l'opérateur ne peut pas être appelé
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\ObjetNormal.h(14,2): message : voir la déclaration de 'ObjetNormal::ObjetNormal'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.h(20): message : voir la référence à l'instanciation de la fonction modèle 'std::unique_ptr<ObjetNormal,std::default_delete<ObjetNormal>> std::make_unique<ObjetNormal,_Ty&,0>(_Ty &)' en cours de compilation
+          with
+          [
+              _Ty=Objet
+          ]
   Salle.cpp
 C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.cpp(13,14): warning C4189: 'clef' : variable locale initialisée mais non référencée
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3120,9): warning C5205: la suppression d'une classe abstraite 'Objet' qui a un destructeur non virtuel entraîne un comportement indéfini
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(8): message : voir la déclaration de 'Objet'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3118): message : pendant la compilation de la fonction membre classe modèle 'void std::default_delete<Objet>::operator ()(_Ty *) noexcept const'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3230): message : voir la référence à l'instanciation de la fonction modèle 'void std::default_delete<Objet>::operator ()(_Ty *) noexcept const' en cours de compilation
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3157): message : voir la référence à l'instanciation classe modèle 'std::default_delete<Objet>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(332): message : voir la référence à l'instanciation classe modèle 'std::unique_ptr<Objet,std::default_delete<Objet>>' en cours de compilation
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.h(18): message : voir la référence à l'instanciation classe modèle 'std::pair<const std::string,std::unique_ptr<Objet,std::default_delete<Objet>>>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): error C2664: 'ObjetNormal::ObjetNormal(const ObjetNormal &)' : impossible de convertir l'argument 1 de '_Ty' en 'const ObjetNormal &'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3415,1): message : Raison : impossible de convertir de '_Ty' en 'const ObjetNormal'
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,56): message : Aucun opérateur de conversion définie par l'utilisateur disponible qui puisse effectuer cette conversion, ou l'opérateur ne peut pas être appelé
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\ObjetNormal.h(14,2): message : voir la déclaration de 'ObjetNormal::ObjetNormal'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.h(20): message : voir la référence à l'instanciation de la fonction modèle 'std::unique_ptr<ObjetNormal,std::default_delete<ObjetNormal>> std::make_unique<ObjetNormal,_Ty&,0>(_Ty &)' en cours de compilation
+          with
+          [
+              _Ty=Objet
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3415): error C2259: 'Objet' : impossible d'instancier une classe abstraite
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(8): message : voir la déclaration de 'Objet'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3415): message : à cause des membres suivants :
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3415): message : 'void Objet::utiliser(void)' : est abstrait
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(21): message : voir la déclaration de 'Objet::utiliser'
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.cpp(32): message : voir la référence à l'instanciation de la fonction modèle 'std::unique_ptr<Objet,std::default_delete<Objet>> std::make_unique<Objet,ObjetSerrure&,0>(ObjetSerrure &)' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): error C2259: 'Objet' : impossible d'instancier une classe abstraite
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(8): message : voir la déclaration de 'Objet'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): message : à cause des membres suivants :
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): message : 'void Objet::utiliser(void)' : est abstrait
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Objet.h(21): message : voir la déclaration de 'Objet::utiliser'
   Génération de code en cours...
-  ProjetTest.vcxproj -> C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\x64\Debug\ProjetTest.exe
-=======
-     Création de la bibliothèque C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.lib et de l'objet C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exp
-  ProjetTest.vcxproj -> C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exe
->>>>>>> 677fd8d108cd5d673a0126729086cc664dc9a3f4

@@ -1,2 +1,16 @@
-﻿  main.cpp
+﻿  Joueur.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(2892,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Joueur.cpp(91): message : voir la référence à l'instanciation de la fonction modèle '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,Joueur::jouer::<lambda_1>>(const _InIt,const _InIt,_OutIt,_Fn)' en cours de compilation
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Elem=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Fn=Joueur::jouer::<lambda_1>
+          ]
+  main.cpp
+  Plateau.cpp
+  Salle.cpp
+C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\Salle.cpp(13,14): warning C4189: 'clef' : variable locale initialisée mais non référencée
+  Génération de code en cours...
   ProjetTest.vcxproj -> C:\Users\panoy\OneDrive\Desktop\université\INF1015\livrable 1_git\x64\Debug\ProjetTest.exe

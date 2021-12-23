@@ -9,7 +9,7 @@
 
 class ObjetNormal :public Objet {
 public:
-	ObjetNormal(std::string nom, std::string description, std::vector<std::string> motsImportants) :nom_(nom), description_(description), motsImportants_(motsImportants) {};
+	ObjetNormal(std::string nom, std::string description, std::vector<std::string> motsImportants): Objet(nom, description, motsImportants){}
 
 	ObjetNormal(const ObjetNormal& autre) {
 		nom_ = autre.nom_;
@@ -20,13 +20,6 @@ public:
 		}
 	}
 
-	std::string getNom() { return nom_; }
-	std::string getDescription() { return description_; }
-	std::vector<std::string> getMotsImportant() { return motsImportants_; }
-	void setNom(std::string nom) { nom_ = nom; }
-	void setDescription(std::string description) { description_ = description; }
-	void setMotsImportant(std::vector<std::string> motsImportant) { motsImportants_ = motsImportant; }
-
 	void ajouterObjet(ObjetSerrure& objet)  {
 		objetsNormaux_.insert({ objet.getNom(), std::make_unique<ObjetSerrure>(objet) });
 		std::cout << " objet ajoutee:  " << objetsNormaux_[objet.getNom()]->getNom();
@@ -34,13 +27,11 @@ public:
 
 
 	void utiliser() override {
-		std::cout << "Bonjour";
+		std::cout << ""
 	}
 
 private:
-	std::string nom_;
-	std::string description_;
-	std::vector<std::string> motsImportants_;
+
 	std::map < std::string, std::unique_ptr<ObjetSerrure>> objetsNormaux_;
 
 };

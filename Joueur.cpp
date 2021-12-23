@@ -10,7 +10,6 @@ void Joueur::executerCommande(std::string commande) {
 	catch (const std::out_of_range&) {
 		std::cout << "Commande inconnue. Utiliser (C) pour afficher la liste des commandes.";
 	}
-	
 }
 
 void Joueur::regarder(std::string quoi){

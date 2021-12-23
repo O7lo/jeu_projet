@@ -63,6 +63,8 @@ using namespace gsl;
 Plateau creerPlateau() {
 	Plateau plateau;
 
+
+
 	Salle cuisine("Cuisine","C'est sale, il y a plein de bouffe partout, une tonne de mouches à fruits et une odeur d'oeufs pourris.");
 	Salle entree("Entree", "Cette salle est l'entree, tapis rouge sur le sol");
 	Salle corridor("Corridor","Les murs sont tachés de sang, le vieux plancher de bois craque à chacun de mes pas, il fait sombre, les ampoules sont brûlées.");
@@ -71,6 +73,21 @@ Plateau creerPlateau() {
 	Salle passageSecret("Passage secret", "Il fait un noir total ici, je ne vois strictement rien. J'aurais besoin de quelque chose pour m'éclairer.");
 	Salle salleDeBain("Salle de bain", "C'est immonde! Mais quelle horreur! Je sens que je vais vômir si je reste ici trop longtemps! Il y a des selles partout sur les murs, le plancher et même le plafond! Le seul endroit qui a été épargné par le cataclysme fécal qui s'est produit ici c'est le bol de toilette, quelle ironie!");
 	Salle chambre("Chambre", "Merde, il y a quelqu'un dans le lit!\t*éteint rapidement la lumière*\nJ'espère qu'il ne m'a pas vu!\t*écoute en silence*\t...\n*rallume la lumière*\tEst-ce qu'il est mort?");
+
+	vector<string> motsJunkie = { "junkie" };
+	vector<string> motsClef = { "clef" };
+	vector<string> motsEnfant = { "enfant" };
+	vector<string> motsPoison = { "poison" };
+
+	ObjetNormal junkie("Junkie", "Il ressemble vraiment à un cadavre, mais je vois son torse se soulever légèrement quand il inspire. Il a vraiment mauvaise mine, je peux voir la forme de ses os sous sa peau mince de couleur maladive. Il s'est endormi avec une bière qu'il tient encore fermement dans sa main gauche comme un enfant qui se serait endormi avec son toutou préféré. Tiens, on dirait une clef qui dépasse de sous son aisselle. Je ne peux pas croire que je suis en train de faire ca, je voulais juste donner des cadeaux aux enfants moi! Mais cette clef peut probablement m'aider à sortir de cette maison de cauchemards. Ca pue la mort! Ce junkie ne s'est probablement pas lavé depuis des mois! Je me sens si sale maintenant que je l'ai touché! Pauvre type. J'espère qu'il ne sera pas faché que j'aie pris sa clef.", motsJunkie);
+	ObjetSerrure clef("Clef", "C'est une clef que j'ai trouvée sous l'aisselle du junkie. Elle est rouillée et elle empeste la sueur.", motsClef);
+	ObjetNormal enfant("Enfant", "Il a l'air terrorisé. Il ou Elle? Difficile à dire vu son état pitoyable. Son visage me rappelle celui du Junkie. Ce doit être son père. L'enfant tient un toutou à l'air maléfique. Il a un air si défraichi que même la laveuse ne saurait réduire la crasse dont il est enduite. Peu importe. Je suis venu ici avec une seule mission : donner un cadeau à un enfant. J'ai justement une chose à lui offrir : de la liberté.", motsEnfant);
+	ObjetNormal poison("Poison", "Du poison à rat se trouve par-terre dans le laboratoire. Des rats morts jonchent le sol. On dirait un poison fait maison. OH! Il se passe ma foi des choses malsaines dans ce lieu. ", motsPoison);
+
+	chambre.ajouterObjet(junkie);
+	junkie.ajouterObjet(clef);
+	chambre.ajouterObjet(enfant);
+	labo.ajouterObjet(poison);
 
 	plateau.ajouterSalle(chambre);
 	plateau.ajouterSalle(salleDeBain);
@@ -91,22 +108,6 @@ Plateau creerPlateau() {
 
 	plateau.setSalleDeDepart("Salon");
 
-	vector<string> motsJunkie = { "junkie" };
-	vector<string> motsClef = { "clef" };
-	vector<string> motsEnfant = { "enfant" };
-	vector<string> motsPoison = { "poison" };
-
-	ObjetNormal junkie("Junkie", "Il ressemble vraiment à un cadavre, mais je vois son torse se soulever légèrement quand il inspire. Il a vraiment mauvaise mine, je peux voir la forme de ses os sous sa peau mince de couleur maladive. Il s'est endormi avec une bière qu'il tient encore fermement dans sa main gauche comme un enfant qui se serait endormi avec son toutou préféré. Tiens, on dirait une clef qui dépasse de sous son aisselle. Je ne peux pas croire que je suis en train de faire ca, je voulais juste donner des cadeaux aux enfants moi! Mais cette clef peut probablement m'aider à sortir de cette maison de cauchemards. Ca pue la mort! Ce junkie ne s'est probablement pas lavé depuis des mois! Je me sens si sale maintenant que je l'ai touché! Pauvre type. J'espère qu'il ne sera pas faché que j'aie pris sa clef.", motsJunkie);
-	ObjetSerrure clef("Clef","C'est une clef que j'ai trouvée sous l'aisselle du junkie. Elle est rouillée et elle empeste la sueur.", motsClef);
-	ObjetNormal enfant("Enfant", "Il a l'air terrorisé. Il ou Elle? Difficile à dire vu son état pitoyable. Son visage me rappelle celui du Junkie. Ce doit être son père. L'enfant tient un toutou à l'air maléfique. Il a un air si défraichi que même la laveuse ne saurait réduire la crasse dont il est enduite. Peu importe. Je suis venu ici avec une seule mission : donner un cadeau à un enfant. J'ai justement une chose à lui offrir : de la liberté.", motsEnfant);
-	ObjetNormal poison("Poison", "Du poison à rat se trouve par-terre dans le laboratoire. Des rats morts jonchent le sol. On dirait un poison fait maison. OH! Il se passe ma foi des choses malsaines dans ce lieu. ", motsPoison);
-
-
-	chambre.ajouterObjet(junkie);
-	junkie.ajouterObjet(clef);
-	labo.ajouterObjet(poison);
-	
-	
 
 	return plateau;
 }
@@ -128,6 +129,7 @@ int main(int argc, char* argv[])
 	initialiserBibliothequeCours(argc, argv);
 	
 	Plateau plateau = creerPlateau();
+
 	introduireJeu();
 	Joueur joueur(plateau);
 	joueur.jouer();

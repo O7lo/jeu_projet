@@ -30,7 +30,6 @@ public:
 	void ajouterObjet(ObjetSerrure& objet);
 	//void ajouterObjet(ObjetDeplacable& objet);
 
-
 private:
 	std::string nom_="pas de nom";
 	std::string description_="pas de description";

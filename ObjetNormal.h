@@ -9,7 +9,7 @@
 
 class ObjetNormal :public Objet {
 public:
-	ObjetNormal(std::string nom, std::string description, std::vector<std::string> motsImportants): Objet(nom, description, motsImportants){}
+	ObjetNormal(std::string nom, std::string description, std::vector<std::string> motsImportants, std::string utilisation): Objet(nom, description, motsImportants), utilisation_(utilisation){}
 
 	ObjetNormal(const ObjetNormal& autre) {
 		nom_ = autre.nom_;
@@ -23,11 +23,11 @@ public:
 
 
 	void utiliser() override {
-		std::cout << "";
+		std::cout << utilisation_;
 	}
 
 private:
-
-	std::map < std::string, std::unique_ptr<Objet>> objetsNormaux_;
+	std::string utilisation_;
+	std::map < std::string, std::unique_ptr<ObjetSerrure>> objetsNormaux_;
 
 };

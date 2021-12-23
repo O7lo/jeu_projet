@@ -70,12 +70,17 @@ void Joueur::afficherInventaire(std::string) {
 }
 
 void Joueur::afficherCommandes(std::string) {
-	std::cout << "\nRegarder (r) + nom d'un objet (optionnel)\nutiliser (u) + nom d'un objet\naller au nord (n)\naller au sud (s)\naller à l'est (e)\naller à l'ouest (o)\nquitter le jeu (q)";
+	std::cout << "\nListe des commandes:";
+	std::cout << "\n\tRegarder (r) + nom d'un objet (optionnel)\n\tutiliser (u) + nom d'un objet\n\taller au nord (n)\n\taller au sud (s)\n\taller à l'est (e)\n\taller à l'ouest (o)\n\tquitter le jeu (q)";
 }
 
 void Joueur::quitter(std::string) {
 	//si on a l'enfant dans notre inventaire: message jeu gagné, sinon message jeu échoué
-	std::cout << "quitter"; 
+	std::cout << "\n---------------------------------------------------------\n\nOh! HOHO! Mais quel étourdis je fais! Je suis magique!\nJe peux donc sortir d'ici quand je veux grâce à la magie de noël!     **POUF!**";
+	if (inventaire_.find("enfant") != inventaire_.end()) {
+		std::cout << "\n Allez, viens par ici petit, je t'emmene avec moi au pôle-nord. C'est bien plus chaleureux qu'ici tu verras!\n\n~~~~~~~~~~FÉLICITATIONS! VOUS AVEZ GAGNÉ!~~~~~~~~~~\n\n\n\n";
+	}
+	else std::cout << "\n\n~~~~~~~~~~VOUS AVEZ PERDU, ESSAYEZ ENCORE!~~~~~~~~~~\n\n\n\n";
 	continuerAJouer_ = false;
 }
 

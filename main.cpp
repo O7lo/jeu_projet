@@ -106,27 +106,15 @@ Plateau creerPlateau() {
 	chambre.setDescription(junkie.getDescription());
 	
 
-	
-
-	//NOTE:utiliser le patron composite pour les objets. (on pourrait avoir un objet poupée russe)
-	//NOTE:les objets contenus dans d'autres objets vont dans l'inventaire du joueur quand le joueur a regardé l'objet conteneur assez souvent, c'est à dire le nombre de dialogues moins 1.
-	//NOTE:pour les utilisations d'objet je pense que ce serait les salles qui devraient gérer cela.
 	//NOTE:les objets contenus dans d'autres objets vont dans l'inventaire du joueur quand le joueur a regardé l'objet conteneur assez souvent, c'est à dire le nombre de dialogues moins 1.
 	//NOTE:pour les utilisations d'objet je pense que ce serait les salles qui devraient gérer cela.
 
 	return plateau;
 }
 
-//void afficherCommandes() {
-//	cout << "\nRegarder (R)\naller au nord (N)\naller au sud (S)\naller à l'est (E)\naller à l'ouest (O)\nquitter le jeu (Q)";
-//}
-
 void introduireJeu() {
 	cout << "\n\n~~~~~~~~~~~~~~~~ Le père noël est arrivé deux mois trop tôt! ~~~~~~~~~~~~~~~~";
-	cout << "\n\n------------------------ Un jeu de Pascal et Arthur ------------------------";
-	cout << "\nListe des commandes:";
-	
-	//afficherCommandes();
+	cout << "\n\n------------------------ Un jeu de Pascal et Arthur ------------------------\n";
 }
 
 int main(int argc, char* argv[])

@@ -14,10 +14,6 @@ public:
 	ObjetNormal(const ObjetNormal& autre) {
 		nom_ = autre.nom_;
 		description_ = autre.description_;
-		for (const auto& [nom, objet] : autre.objetsNormaux_) {
-			std::string nomCopie = nom;
-			objetsNormaux_.insert({ nomCopie, std::make_unique<ObjetSerrure>(*objet) });
-		}
 	}
 
 	void ajouterObjet(ObjetSerrure& objet)  {
@@ -27,11 +23,11 @@ public:
 
 
 	void utiliser() override {
-		std::cout << ""
+		std::cout << "";
 	}
 
 private:
 
-	std::map < std::string, std::unique_ptr<ObjetSerrure>> objetsNormaux_;
+	std::map < std::string, std::unique_ptr<Objet>> objetsNormaux_;
 
 };

@@ -8,7 +8,7 @@
 class Plateau {
 public:
 	Plateau() = default;
-	void ajouterSalle(Salle& salle);
+	Salle* ajouterSalle(Salle& salle);
 	void ajouterSalle(Salle& salle, Direction direction, std::string voisin);
 	void ajouterSalle(std::string nom, std::string description);
 	void connecterVoisins(std::string salle1, Direction direction, std::string salle2);

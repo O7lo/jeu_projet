@@ -11,9 +11,9 @@ std::vector<std::string> Salle::getNomsObjets() const{
 std::map<std::string, Objet*> Salle::getMotsImportantsObjets() const {
 	std::map<std::string, Objet*> motsImportantsObjets;
 	for (auto&& clef : objets_ | std::ranges::views::keys) {
-		/*for (auto mot : objets_.at(clef)->getMotsImportants()) {
-			motsImportantsObjets[mot]=objets_.at(clef);
-		}*/
+		for (auto mot : objets_.at(clef)->getMotsImportants()) {
+			motsImportantsObjets[mot]=objets_.at(clef).get();
+		}
 	}
 	return motsImportantsObjets;
 }
@@ -26,5 +26,15 @@ void Salle::connecterVoisin(Salle* voisin, Direction direction){
 
 void Salle::ajouterObjet(ObjetNormal& objet) {
 	objets_.insert({ objet.getNom(), std::make_unique<ObjetNormal>(objet)});
-	std::cout << "objet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
+	std::cout << "\nobjet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
 }
+
+void Salle::ajouterObjet(ObjetSerrure& objet) {
+	objets_.insert({ objet.getNom(), std::make_unique<ObjetSerrure>(objet) });
+	std::cout << "\nobjet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
+}
+
+//void Salle::ajouterObjet(ObjetDeplacable& objet) {
+//	objets_.insert({ objet.getNom(), std::make_unique<ObjetDeplacable>(objet) });
+//	std::cout << "objet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
+//}

@@ -1,8 +1,9 @@
 #include "Plateau.h"
 
-void Plateau::ajouterSalle(Salle& salle) {
+Salle* Plateau::ajouterSalle(Salle& salle) {
 	salles_.insert({ salle.getNom(),std::make_unique<Salle>(salle) });
 	std::cout << "salle ajoutée: " << salles_[salle.getNom()]->getNom() << "\t";
+	return salles_[salle.getNom()].get();
 }
 
 void Plateau::ajouterSalle(Salle& salle, Direction direction, std::string voisin) {

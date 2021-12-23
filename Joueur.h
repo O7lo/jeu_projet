@@ -9,7 +9,7 @@
 class Joueur {
 public:
 	Joueur(const Plateau& plateau) { salleActuelle_ = plateau.getSalleDeDepart(); }
-
+	Joueur() = default;
 	void setSalleActuelle(Salle& salle) { salleActuelle_ = &salle; }
 	Salle* getSalleActuelle() { return salleActuelle_; }
 	void regarder(std::string quoi="regarder");

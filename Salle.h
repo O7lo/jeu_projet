@@ -12,6 +12,7 @@
 class Salle {
 public:
 	Salle(std::string nom, std::string description) { nom_ = nom; description_ = description; }
+	Salle() = default;
 	Salle(const Salle& autre) {
 		nom_ = autre.nom_; 
 		description_ = autre.description_; 

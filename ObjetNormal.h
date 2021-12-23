@@ -9,7 +9,8 @@
 
 class ObjetNormal :public Objet {
 public:
-	ObjetNormal(std::string nom, std::string description, std::vector<std::string> motsImportants, std::string utilisation): Objet(nom, description, motsImportants), utilisation_(utilisation){}
+	ObjetNormal(std::string nom, std::string description, std::vector<std::string> motsImportants, std::string utilisation):
+		Objet(nom, description, motsImportants), utilisation_(utilisation){}
 
 	ObjetNormal(const ObjetNormal& autre) {
 		nom_ = autre.nom_;

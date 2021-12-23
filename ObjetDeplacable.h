@@ -2,15 +2,18 @@
 #include <iostream>
 #include <string>
 #include <memory>
-
+#include "Joueur.h"
 #include "Objet.h"
 
 class ObjetDeplacable :public Objet {
 public:
-	ObjetDeplacable(std::string nom, std::string description, std::vector<std::string> motsImportants, std::string utilisation) : Objet(nom, description, motsImportants), utilisation_(utilisation) {}
+	ObjetDeplacable(std::string nom, std::string description, std::vector<std::string> motsImportants) : Objet(nom, description, motsImportants){}
 
+	void utiliser() override {
+		
+
+	}
 private:
-	std::string utilisation_;
 
 
 };

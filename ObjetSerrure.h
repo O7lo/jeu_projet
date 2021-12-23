@@ -7,7 +7,7 @@
 
 class ObjetSerrure : public Objet {
 public:
-	ObjetSerrure(std::string nom, std::string description) :nom_(nom), description_(description) {}
+	ObjetSerrure(std::string nom, std::string description, std::vector<std::string> motsImportants) :nom_(nom), description_(description), motsImportants_(motsImportants) {}
 
 	std::string getNom() { return nom_; }
 	std::string getDescription() { return description_; }

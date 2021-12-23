@@ -8,6 +8,7 @@
 #include "ObjetNormal.h"
 #include <map>
 #include <ranges>
+#include "ObjetDeplacable.h"
 
 class Salle {
 public:
@@ -26,9 +27,9 @@ public:
 	std::vector<std::string> getNomsObjets() const;
 	std::map<std::string, Objet*> getMotsImportantsObjets() const;
 	bool aUnObjet() { return objets_.size() > 0; }
-	void ajouterObjet(ObjetNormal& objet);
-	void ajouterObjet(ObjetSerrure& objet);
-	//void ajouterObjet(ObjetDeplacable& objet);
+	Objet* ajouterObjet(ObjetNormal& objet);
+	Objet* ajouterObjet(ObjetSerrure& objet);
+	Objet* ajouterObjet(ObjetDeplacable& objet);
 
 private:
 	std::string nom_="pas de nom";

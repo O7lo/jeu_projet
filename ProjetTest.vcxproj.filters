@@ -69,5 +69,8 @@
     <ClInclude Include="ObjetSerrure.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ObjetDeplacable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

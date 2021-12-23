@@ -5,6 +5,8 @@
 #include <map>
 #include "Objet.h"
 #include "ObjetSerrure.h"
+#include "ObjetDeplacable.h"
+
 
 
 class ObjetNormal :public Objet {
@@ -16,11 +18,23 @@ public:
 		description_ = autre.description_;
 	}
 
-	void ajouterObjet(ObjetSerrure& objet)  {
-		objetsNormaux_.insert({ objet.getNom(), std::make_unique<ObjetSerrure>(objet) });
-		std::cout << " objet ajoutee:  " << objetsNormaux_[objet.getNom()]->getNom();
+	Objet* ajouterObjet(ObjetNormal& objet) {
+		objets_.insert({ objet.getNom(), std::make_unique<ObjetNormal>(objet) });
+		std::cout << "\nobjet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
+		return objets_[objet.getNom()].get();
 	}
 
+	Objet* ajouterObjet(ObjetSerrure& objet) {
+		objets_.insert({ objet.getNom(), std::make_unique<ObjetSerrure>(objet) });
+		std::cout << "\nobjet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
+		return objets_[objet.getNom()].get();
+	}
+
+	Objet* ajouterObjet(ObjetDeplacable& objet) {
+		objets_.insert({ objet.getNom(), std::make_unique<ObjetDeplacable>(objet) });
+		std::cout << "objet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
+		return objets_[objet.getNom()].get();
+	}
 
 	void utiliser() override {
 		std::cout << utilisation_;
@@ -28,6 +42,6 @@ public:
 
 private:
 	std::string utilisation_;
-	std::map < std::string, std::unique_ptr<ObjetSerrure>> objetsNormaux_;
+	std::map < std::string, std::unique_ptr<Objet>> objets_;
 
 };

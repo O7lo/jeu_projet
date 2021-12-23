@@ -74,13 +74,13 @@ Plateau creerPlateau() {
 	Salle salleDeBain("la salle de bain", "C'est immonde! Mais quelle horreur! Je sens que je vais vômir si je reste ici trop longtemps! Il y a des selles partout sur les murs, le plancher et même le plafond! Le seul endroit qui a été épargné par le cataclysme fécal qui s'est produit ici c'est le bol de toilette, quelle ironie!");
 	Salle chambre("la chambre", "Merde, il y a quelqu'un dans le lit!\t*éteint rapidement la lumière*\nJ'espère qu'il ne m'a pas vu!\t*écoute en silence*\t...\n*rallume la lumière*\tEst-ce qu'il est mort?");
 
-	ObjetNormal junkie("un homme cadavérique, surement un junkie", "Il ressemble vraiment à un cadavre, mais je vois son torse se soulever légèrement quand il inspire. Il a vraiment mauvaise mine, je peux voir la forme de ses os sous sa peau mince de couleur maladive. Il s'est endormi avec une bière qu'il tient encore fermement dans sa main gauche comme un enfant qui se serait endormi avec son toutou préféré. Tiens, on dirait une clef qui dépasse de sous son aisselle.","Je ne peux pas croire que je suis en train de faire ca, je voulais juste donner des cadeaux aux enfants moi!Mais cette clef peut probablement m'aider à sortir de cette maison de cauchemards. Ca pue la mort! Ce junkie ne s'est probablement pas lavé depuis des mois!Je me sens si sale maintenant que je l'ai touché! Pauvre type. J'espère qu'il ne sera pas faché que j'aie pris sa clef.", { "homme","cadavérique","junkie" });
+	ObjetNormal junkie("un homme cadavérique, surement un junkie", "Il ressemble vraiment à un cadavre, mais je vois son torse se soulever légèrement quand il inspire. Il a vraiment mauvaise mine, je peux voir la forme de ses os sous sa peau mince de couleur maladive. Il s'est endormi avec une bière qu'il tient encore fermement dans sa main gauche comme un enfant qui se serait endormi avec son toutou préféré. Tiens, on dirait une clef qui dépasse de sous son aisselle.", { "homme","cadavérique","junkie" },"Je ne peux pas croire que je suis en train de faire ca, je voulais juste donner des cadeaux aux enfants moi!Mais cette clef peut probablement m'aider à sortir de cette maison de cauchemards. Ca pue la mort! Ce junkie ne s'est probablement pas lavé depuis des mois!Je me sens si sale maintenant que je l'ai touché! Pauvre type. J'espère qu'il ne sera pas faché que j'aie pris sa clef.");
 	/*ObjetDeplacable clef("une vieille clef en acier rouillée", "C'est une clef que j'ai trouvée sous l'aisselle du junkie. Elle est rouillée et elle empeste la sueur.", {"clef","acier","rouillée"});*/
 	/*ObjetDeplacable enfant("un enfant en piteux état, c'est un jeune garçon.", "Il a l'air terrorisé! et il est dans un état pitoyable. Son visage me rappelle celui du Junkie, ce doit être son père. L'enfant tient un toutou à l'air maléfique. Il a un air si défraichi que j'ai peur que même la laveuse ne saurait le débarrasser de la crasse dont il est recouvert. Peu importe. Je suis venu ici avec une seule mission : donner un cadeau à un enfant. J'ai justement une chose à lui offrir : de la liberté! Il faut que je trouve un moyen de le sortir de là.", { "enfant","jeune","garçon","garcon" });*/
-	ObjetNormal poison("une substance douteuse, je crois que c'est du poison à rat", "Du poison à rat se trouve par-terre dans le laboratoire. Des rats morts jonchent le sol. On dirait un poison fait maison. OH! Il se passe ma foi des choses malsaines dans ce lieu. ", { "substance","poison" });
+	ObjetNormal poison("une substance douteuse, je crois que c'est du poison à rat", "Du poison à rat se trouve par-terre dans le laboratoire. Des rats morts jonchent le sol. On dirait un poison fait maison. OH! Il se passe ma foi des choses malsaines dans ce lieu. ", { "substance","poison" },"utilisation du poison");
 	/*unique_ptr<Objet> serrure = make_unique<Objet> (string("un trou d'une forme qui fait penser à une serrure"), string("mais pourquoi il y aurait une serrure au fond d'un bol de toilette? C'est vraiment un endroit bizzare ici."), { "trou","serrure" });*/
 	ObjetSerrure serrure("un trou d'une forme qui fait penser à une serrure", "mais pourquoi il y aurait une serrure au fond d'un bol de toilette? C'est vraiment un endroit bizzare ici.", { "trou","serrure" });
-	ObjetNormal bolDeToilette("le bol de toilette tout blanc", "Ca \"clash\" vraiment avec le rete de la pièce, c'est la seule chose qui est propre, je me demande pourquoi.", { "bol","toilette","blanc" });
+	ObjetNormal bolDeToilette("le bol de toilette tout blanc", "Ca \"clash\" vraiment avec le rete de la pièce, c'est la seule chose qui est propre, je me demande pourquoi.", { "bol","toilette","blanc" },"utilisation du bol de toilette");
 
 
 	
@@ -94,9 +94,10 @@ Plateau creerPlateau() {
 	Salle* entree_=plateau.ajouterSalle(entree);
 	Salle* corridor_=plateau.ajouterSalle(corridor);
 	
-	chambre_->ajouterObjet(junkie);
-	//junkie.ajouterObjet(clef);
-	//chambre.ajouterObjet(enfant);
+	auto junkie_=chambre_->ajouterObjet(junkie);
+	auto leJunkie_=static_cast<ObjetNormal>(junkie);
+	//leJunkie_.ajouterObjet(clef);
+	//chambre_->ajouterObjet(enfant);
 	labo_->ajouterObjet(poison);
 
 	plateau.connecterVoisins("la chambre", Direction::ouest, "le corridor");

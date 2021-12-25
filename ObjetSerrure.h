@@ -4,6 +4,7 @@
 #include <map>
 #include <memory>
 #include "Objet.h"
+//#include "Joueur.h"
 
 class ObjetSerrure : public Objet {
 public:
@@ -18,8 +19,13 @@ public:
 
 	void utiliser() override {
 		std::cout << utilisation_;
+		/*salleActuel_->connecterVoisin(connection_, Direction::est);*/
+		
 	}
 
 private:
 
+	//Joueur joueur_;
+	//Salle* salleActuel_ = joueur_.getSalleActuelle();
+	//Salle* connection_;
 };

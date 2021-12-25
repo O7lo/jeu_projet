@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <memory>
-
+//#include "Joueur.h"
 #include "Objet.h"
 
 class ObjetDeplacable :public Objet {
@@ -19,7 +19,6 @@ public:
 	void utiliser() override {
 		std::cout << utilisation_;
 	}
-
 private:
 
 

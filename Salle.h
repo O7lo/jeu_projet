@@ -9,6 +9,7 @@
 #include <map>
 #include <ranges>
 #include "ObjetDeplacable.h"
+#include <algorithm>
 
 class Salle {
 public:
@@ -16,6 +17,9 @@ public:
 	Salle(const Salle& autre) {
 		nom_ = autre.nom_; 
 		description_ = autre.description_; 
+		std::for_each(autre.objets_.begin(), autre.objets_.end(), [&]
+		(const std::pair<const std::string,std::unique_ptr<Objet>>& paire) 
+			{ objets_[paire.first]=paire.second->clone(); });
 	}
 	void setNom(std::string nom) { nom_ = nom; }
 	std::string getNom() { return nom_; }

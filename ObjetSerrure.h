@@ -7,17 +7,19 @@
 
 class ObjetSerrure : public Objet {
 public:
-	ObjetSerrure(std::string nom, std::string description, std::vector<std::string> motsImportants) : Objet(nom, description, motsImportants) {}
+	ObjetSerrure(std::string nom, std::vector<std::string> motsImportants, std::string description,std::string utilisation) : Objet(nom, motsImportants, description,utilisation) {}
 
-	ObjetSerrure(const ObjetSerrure& autre) {
-		nom_ = autre.nom_;
-		description_ = autre.description_;
+	ObjetSerrure(const ObjetSerrure& autre) :
+		Objet(autre.nom_, autre.motsImportants_, autre.description_, autre.utilisation_) {}
+
+	std::unique_ptr<Objet> clone() {
+		return std::make_unique<ObjetSerrure>(*this);
 	}
 
 	void utiliser() override {
-		std::cout << "bon";
+		std::cout << utilisation_;
 	}
 
 private:
-	
+
 };

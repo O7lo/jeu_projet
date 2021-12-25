@@ -6,16 +6,23 @@
 #include "Objet.h"
 #include "ObjetSerrure.h"
 #include "ObjetDeplacable.h"
+#include <algorithm>
 
 
 
 class ObjetNormal :public Objet {
 public:
-	ObjetNormal(std::string nom, std::string description, std::vector<std::string> motsImportants, std::string utilisation): Objet(nom, description, motsImportants), utilisation_(utilisation){}
+	ObjetNormal(std::string nom, std::vector<std::string> motsImportants, std::string description, std::string utilisation): Objet(nom, motsImportants, description,utilisation){}
 
-	ObjetNormal(const ObjetNormal& autre) {
-		nom_ = autre.nom_;
-		description_ = autre.description_;
+	ObjetNormal(const ObjetNormal& autre) : 
+		Objet(autre.nom_,autre.motsImportants_,autre.description_, autre.utilisation_){
+		std::for_each(autre.objets_.begin(), autre.objets_.end(), [&]
+		(const std::pair<const std::string, std::unique_ptr<Objet>>& paire)
+			{ objets_[paire.first] = paire.second->clone(); });
+	}
+
+	std::unique_ptr<Objet> clone() {
+		return std::make_unique<ObjetNormal>(*this);
 	}
 
 	Objet* ajouterObjet(ObjetNormal& objet) {
@@ -41,7 +48,6 @@ public:
 	}
 
 private:
-	std::string utilisation_;
 	std::map < std::string, std::unique_ptr<Objet>> objets_;
 
 };

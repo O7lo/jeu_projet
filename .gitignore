@@ -34,3 +34,9 @@
 *.bin
 *.sln
 *.vs
+
+*.log
+*.pdb
+*.tlog
+*.zip
+

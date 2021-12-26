@@ -32,9 +32,14 @@ public:
 	std::vector<std::string> getNomsObjets() const;
 	std::map<std::string, Objet*> getMotsImportantsObjets() const;
 	bool aUnObjet() { return objets_.size() > 0; }
-	Objet* ajouterObjet(ObjetNormal& objet);
-	Objet* ajouterObjet(ObjetSerrure& objet);
-	Objet* ajouterObjet(ObjetDeplacable& objet);
+	template<typename T>
+	Objet* ajouterObjet(T& objet) {
+		this->objets_.insert({ objet.getNom(), std::make_unique<T>(objet) });
+		std::cout << "\nobjet ajoutée: " << this->objets_[objet.getNom()]->getNom() << "\t";
+		return this->objets_[objet.getNom()].get();
+	}
+	//Objet* ajouterObjet(ObjetSerrure& objet);
+	//Objet* ajouterObjet(ObjetDeplacable& objet);
 
 private:
 	std::string nom_="pas de nom";

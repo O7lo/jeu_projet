@@ -20,7 +20,7 @@ public:
 		std::cout << utilisation_;
 	}
 private:
-
+	//Joueur* joueur_;
 
 
 };

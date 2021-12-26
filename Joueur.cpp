@@ -42,7 +42,6 @@ void Joueur::regarder(std::string quoi){
 void Joueur::utiliser(std::string quoi) {
 	Objet* objet = trouverObjet(quoi);
 	if (objet != nullptr) {
-		std::cout << "\n";
 		objet->utiliser();
 	}
 	else { std::cout << "\nDésolé, je ne trouve pas cet objet."; }

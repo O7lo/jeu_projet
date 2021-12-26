@@ -1,25 +1,9 @@
-﻿  bibliotheque_cours.cpp
-C:\Users\pascal\Desktop\ecole\INF1015\projet\bibliotheque_cours\bibliotheque_cours.cpp(74,119): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
-  verification_allocation.cpp
-  Joueur.cpp
-D:\programmes\Visual Studio\Enterprise\IDE\VC\Tools\MSVC\14.29.30133\include\algorithm(2892,24): warning C4244: '=' : conversion de 'int' en 'char', perte possible de données
-C:\Users\pascal\Desktop\ecole\INF1015\projet\Joueur.cpp(97): message : voir la référence à l'instanciation de la fonction modèle '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,Joueur::jouer::<lambda_1>>(const _InIt,const _InIt,_OutIt,_Fn)' en cours de compilation
-          with
-          [
-              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
-              _Elem=char,
-              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
-              _Fn=Joueur::jouer::<lambda_1>
-          ]
-  main.cpp
+﻿  main.cpp
 C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(91,9): warning C4189: 'salon_' : variable locale initialisée mais non référencée
 C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(94,9): warning C4189: 'corridor_' : variable locale initialisée mais non référencée
 C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(89,9): warning C4189: 'passageSecret_' : variable locale initialisée mais non référencée
 C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(96,7): warning C4189: 'junkie_' : variable locale initialisée mais non référencée
 C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(88,9): warning C4189: 'salleDeBain_' : variable locale initialisée mais non référencée
 C:\Users\pascal\Desktop\ecole\INF1015\projet\main.cpp(93,9): warning C4189: 'entree_' : variable locale initialisée mais non référencée
-  Plateau.cpp
-  Salle.cpp
-  Génération de code en cours...
      Création de la bibliothèque C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.lib et de l'objet C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exp
   ProjetTest.vcxproj -> C:\Users\pascal\Desktop\ecole\INF1015\projet\x64\Debug\ProjetTest.exe

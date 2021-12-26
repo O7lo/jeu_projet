@@ -24,20 +24,15 @@ void Salle::connecterVoisin(Salle* voisin, Direction direction){
 	std::cout << "voisin connecté: " << voisins_[dir]->getNom()<<" "<< nomsDirections[dir] <<"\t";
 }
 
-Objet* Salle::ajouterObjet(ObjetNormal& objet) {
-	objets_.insert({ objet.getNom(), std::make_unique<ObjetNormal>(objet) });
-	std::cout << "\nobjet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
-	return objets_[objet.getNom()].get();
-}
 
-Objet* Salle::ajouterObjet(ObjetSerrure& objet) {
-	objets_.insert({ objet.getNom(), std::make_unique<ObjetSerrure>(objet) });
-	std::cout << "\nobjet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
-	return objets_[objet.getNom()].get();
-}
-
-Objet* Salle::ajouterObjet(ObjetDeplacable& objet) {
-	objets_.insert({ objet.getNom(), std::make_unique<ObjetDeplacable>(objet) });
-	std::cout << "objet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
-	return objets_[objet.getNom()].get();
-}
+//Objet* Salle::ajouterObjet(ObjetSerrure& objet) {
+//	objets_.insert({ objet.getNom(), std::make_unique<ObjetSerrure>(objet) });
+//	std::cout << "\nobjet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
+//	return objets_[objet.getNom()].get();
+//}
+//
+//Objet* Salle::ajouterObjet(ObjetDeplacable& objet) {
+//	objets_.insert({ objet.getNom(), std::make_unique<ObjetDeplacable>(objet) });
+//	std::cout << "objet ajoutée: " << objets_[objet.getNom()]->getNom() << "\t";
+//	return objets_[objet.getNom()].get();
+//}
